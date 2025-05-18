@@ -1,12 +1,14 @@
+import Link from 'next/link';
+
 export default function Header() {
     return (
-        <header className="bg-darkBg border-b border-neonBlue text-white py-4 px-6">
+        <header className="bg-darkBg border-b text-white py-4 px-6">
             <div className="max-w-7xl mx-auto flex items-center justify-between">
-                <div className="text-2xl font-display text-neonBlue tracking-widest">
+                <div className="text-2xl font-display tracking-widest">
                     NameToFound
                 </div>
                 <nav className="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
-                    <a href="/agents" className="hover:text-neonBlue transition">Agents</a>
+                    <Link href="/agents" className="hover:text-white transition">Agents</Link>
                 </nav>
             </div>
         </header>

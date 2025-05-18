@@ -12,8 +12,8 @@ type AgentPageProps = {
     };
 };
 
-export default function Agent({ params }: AgentPageProps) {
-    const { agentId } = params;
+export default async function Agent({ params }: AgentPageProps) {
+    const { agentId } = await params;
 
     const agent = agents.getById(agentId)!;
     const attribute = attributes.getById(agent.attributeId);
