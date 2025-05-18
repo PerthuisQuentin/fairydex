@@ -17,10 +17,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className='antialiased min-h-screen'
+        className='antialiased min-h-screen bg-cover'
+        style={{
+          backgroundImage: 'url(\'/background.png\')',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed',
+        }}
       >
         <Header />
-        {children}
+        <div className="pt-20">
+          {children}
+        </div>
       </body>
     </html>
   );
