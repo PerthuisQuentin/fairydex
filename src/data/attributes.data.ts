@@ -1,4 +1,5 @@
 import { Attribute } from '@/models/attribute';
+import { Attributes } from '@/models/attributes';
 
 import Electric from './attributes/electric';
 import Ether from './attributes/ether';
@@ -7,7 +8,7 @@ import Frost from './attributes/frost';
 import Ice from './attributes/ice';
 import Physical from './attributes/physical';
 
-const attributes: Attribute[] = [
+const attributeList: Attribute[] = [
     Electric,
     Ether,
     Fire,
@@ -15,5 +16,7 @@ const attributes: Attribute[] = [
     Ice,
     Physical,
 ];
+
+const attributes = new Attributes(attributeList);
 
 export default attributes;

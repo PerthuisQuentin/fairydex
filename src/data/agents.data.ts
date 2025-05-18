@@ -1,4 +1,5 @@
 import { Agent } from '@/models/agent';
+import { Agents } from '@/models/agents';
 
 import AlexandrinaSebastiane from './agents/alexandrina-sebastiane';
 import AnbyDemara from './agents/anby-demara';
@@ -34,7 +35,7 @@ import VivianBanshee from './agents/vivian-banshee';
 import VonLycaon from './agents/von-lycaon';
 import ZhuYuan from './agents/zhu-yuan';
 
-const agents: Agent[] = [
+const agentList: Agent[] = [
     AlexandrinaSebastiane,
     AnbyDemara,
     AntonIvanov,
@@ -69,5 +70,7 @@ const agents: Agent[] = [
     VonLycaon,
     ZhuYuan,
 ];
+
+const agents = new Agents(agentList);
 
 export default agents;

@@ -1,5 +1,6 @@
 
 import { Faction } from '@/models/faction';
+import { Factions } from '@/models/factions';
 
 import BelobogHeavyIndustries from './factions/belobog-heavy-industries';
 import CriminalInvestigationSpecialResponseTeam from './factions/criminal-investigation-special-response-team';
@@ -13,7 +14,7 @@ import StarsOfLyra from './factions/stars-of-lyra';
 import VictoriaHousekeeping from './factions/victoria-housekeeping';
 import YunkuiSummit from './factions/yunkui-summit';
 
-const factions: Faction[] = [
+const factionList: Faction[] = [
     BelobogHeavyIndustries,
     CriminalInvestigationSpecialResponseTeam,
     CunningHares,
@@ -26,5 +27,7 @@ const factions: Faction[] = [
     VictoriaHousekeeping,
     YunkuiSummit,
 ];
+
+const factions = new Factions(factionList);
 
 export default factions;
