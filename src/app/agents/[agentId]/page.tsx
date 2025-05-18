@@ -7,9 +7,7 @@ import factions from '@/data/factions.data';
 import specialities from '@/data/specialities.data';
 
 type AgentPageProps = {
-    params: {
-        agentId: AgentId;
-    };
+    params: Promise<{ agentId: AgentId }>
 };
 
 export default async function Agent({ params }: AgentPageProps) {
