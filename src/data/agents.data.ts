@@ -9,7 +9,7 @@ import AstraYao from './agents/astra-yao';
 import BenBigger from './agents/ben-bigger';
 import BillyKid from './agents/billy-kid';
 import BurniceWhite from './agents/burnice-white';
-import CesarKing from './agents/cesar-king';
+import CaesarKing from './agents/caesar-king';
 import CorinWickes from './agents/corin-wickes';
 import EllenJoe from './agents/ellen-joe';
 import EvelynChevalier from './agents/evelyn-chevalier';
@@ -44,7 +44,7 @@ const agentList: Agent[] = [
     BenBigger,
     BillyKid,
     BurniceWhite,
-    CesarKing,
+    CaesarKing,
     CorinWickes,
     EllenJoe,
     EvelynChevalier,

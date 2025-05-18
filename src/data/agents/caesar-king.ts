@@ -8,8 +8,8 @@ import { SpecialityId } from '../speciality.type';
 import { VersionId } from '../version.type';
 
 const data: AgentData = {
-    id: AgentId.CesarKing,
-    name: 'Cesar King',
+    id: AgentId.CaesarKing,
+    name: 'Caesar King',
     rank: Rank.S,
     isPermanent: false,
     firstVersionId: VersionId.Version_1_2,

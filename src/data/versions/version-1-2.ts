@@ -13,7 +13,7 @@ const data: VersionData = {
                     name: 'Ember-Crowned Overlord',
                     agents: [
                         {
-                            agentId: AgentId.CesarKing,
+                            agentId: AgentId.CaesarKing,
                             isMain: true,
                             isNew: true,
                         },

@@ -13,7 +13,7 @@ export enum AgentId {
     BenBigger = 'ben-bigger',
     BillyKid = 'billy-kid',
     BurniceWhite = 'burnice-white',
-    CesarKing = 'cesar-king',
+    CaesarKing = 'caesar-king',
     CorinWickes = 'corin-wickes',
     EllenJoe = 'ellen-joe',
     EvelynChevalier = 'evelyn-chevalier',
