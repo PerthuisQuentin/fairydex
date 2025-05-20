@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 import Header from '@/components/layout/header';
 
 export const metadata: Metadata = {
-  title: 'NameToFound',
+  title: 'NameToFind',
   description: 'ZZZ tools',
 };
 
@@ -17,13 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className='antialiased min-h-screen bg-cover'
-        style={{
-          backgroundImage: 'url(\'/background.png\')',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          backgroundAttachment: 'fixed',
-        }}
+        className='antialiased min-h-screen bg-zinc-900 text-gray-50'
       >
         <Header />
         <div className="pt-20">
