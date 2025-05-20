@@ -8,6 +8,7 @@ export default function Header() {
                     NameToFound
                 </div>
                 <nav className="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
+                    <Link href="/" className="hover:text-white transition">Home</Link>
                     <Link href="/agents" className="hover:text-white transition">Agents</Link>
                 </nav>
             </div>
