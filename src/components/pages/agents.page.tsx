@@ -12,13 +12,13 @@ import FactionIcon from '../faction/faction-icon';
 const getAgentCard = (agent: Agent) => {
     return (
         <Link
-            key={agent.name}
+            key={agent.id}
             href={`/agents/${agent.id}`}
             className="flex items-center p-4 m-4 border border-gray-200 transition-transform duration-150 hover:scale-105 hover:shadow-lg"
             style={{ textDecoration: 'none', color: 'inherit' }}
         >
             <AgentIcon agentId={agent.id} />
-            <div>
+            <div className='ml-6'>
                 <h2 className="text-xl font-bold">{agent.name}</h2>
                 <div className="flex flex-row gap-2 items-center text-base">
                     <RankIcon rank={agent.rank} />

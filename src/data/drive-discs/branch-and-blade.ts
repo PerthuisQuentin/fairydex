@@ -1,0 +1,12 @@
+import { DriveDisc } from '@/models/drive-disc';
+
+import { DriveDiscData, DriveDiscId } from '../drive-disc.type';
+
+const data: DriveDiscData = {
+    id: DriveDiscId.BranchAndBlade,
+    name: 'Branch and Blade',
+};
+
+const driveDisc = new DriveDisc(data);
+
+export default driveDisc;

@@ -13,7 +13,7 @@ export default async function AgentIcon({ agentId }: AgentIconProps) {
             height={100}
             width={100}
             alt={`Agent icon for ${agentId}`}
-            className="rounded mr-6 flex-shrink-0"
+            className="rounded flex-shrink-0"
         />
     );
 }

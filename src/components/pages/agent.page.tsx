@@ -9,16 +9,16 @@ import agents from '@/data/agents.data';
 import FactionIcon from '../faction/faction-icon';
 
 type AgentProps = {
-    agentId: AgentId
+    readonly agentId: AgentId
 };
 
 export default async function Agent({ agentId }: AgentProps) {
     const agent = agents.getById(agentId)!;
 
     return (
-        <div className="mx-auto max-w-4xl mt-8">
-            <h1 className="text-3xl font-bold">{agent.name}</h1>
-            <div className="flex flex-row gap-2 items-center text-base">
+        <div className="mx-auto max-w-4xl mt-8 flex flex-col items-center">
+            <h1 className="text-3xl font-bold mb-2">{agent.name}</h1>
+            <div className="flex flex-row gap-2 items-center text-base mb-4">
                 <RankIcon rank={agent.rank} />
                 <AttributeIcon attributeId={agent.attributeId} />
                 <SpecialityIcon specialityId={agent.specialityId} />
