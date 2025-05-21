@@ -7,13 +7,11 @@ import { AgentId } from '@/data/agent.type';
 import agents from '@/data/agents.data';
 import factions from '@/data/factions.data';
 
-type AgentPageProps = {
-    params: Promise<{ agentId: AgentId }>
+type AgentProps = {
+    agentId: AgentId
 };
 
-export default async function Agent({ params }: AgentPageProps) {
-    const { agentId } = await params;
-
+export default async function Agent({ agentId }: AgentProps) {
     const agent = agents.getById(agentId)!;
     const faction = factions.getById(agent.factionId);
 

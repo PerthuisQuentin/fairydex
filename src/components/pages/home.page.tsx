@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function HomePage() {
+export default function Home() {
     return (
         <main className="flex items-center justify-center min-h-[60vh]">
             <Image
