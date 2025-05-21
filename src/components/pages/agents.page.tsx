@@ -5,12 +5,11 @@ import AttributeIcon from '@/components/attribute/attribute-icon';
 import RankIcon from '@/components/rank/rank-icon';
 import SpecialityIcon from '@/components/speciality/speciality-icon';
 import agents from '@/data/agents.data';
-import factions from '@/data/factions.data';
 import { Agent } from '@/models/agent';
 
-const getAgentCard = (agent: Agent) => {
-    const faction = factions.getById(agent.factionId);
+import FactionIcon from '../faction/faction-icon';
 
+const getAgentCard = (agent: Agent) => {
     return (
         <Link
             key={agent.name}
@@ -25,7 +24,7 @@ const getAgentCard = (agent: Agent) => {
                     <RankIcon rank={agent.rank} />
                     <AttributeIcon attributeId={agent.attributeId} />
                     <SpecialityIcon specialityId={agent.specialityId} />
-                    <span>{faction?.name}</span>
+                    <FactionIcon factionId={agent.factionId} />
                 </div>
             </div>
         </Link>

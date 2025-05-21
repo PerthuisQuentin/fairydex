@@ -5,7 +5,8 @@ import RankIcon from '@/components/rank/rank-icon';
 import SpecialityIcon from '@/components/speciality/speciality-icon';
 import { AgentId } from '@/data/agent.type';
 import agents from '@/data/agents.data';
-import factions from '@/data/factions.data';
+
+import FactionIcon from '../faction/faction-icon';
 
 type AgentProps = {
     agentId: AgentId
@@ -13,7 +14,6 @@ type AgentProps = {
 
 export default async function Agent({ agentId }: AgentProps) {
     const agent = agents.getById(agentId)!;
-    const faction = factions.getById(agent.factionId);
 
     return (
         <div className="mx-auto max-w-4xl mt-8">
@@ -22,7 +22,7 @@ export default async function Agent({ agentId }: AgentProps) {
                 <RankIcon rank={agent.rank} />
                 <AttributeIcon attributeId={agent.attributeId} />
                 <SpecialityIcon specialityId={agent.specialityId} />
-                <span>{faction?.name}</span>
+                <FactionIcon factionId={agent.factionId} />
             </div>
             <Image
                 src={`/agent-splash-arts/${agent.id}.webp`}
