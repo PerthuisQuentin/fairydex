@@ -6,6 +6,7 @@ import { FactionId } from '../faction.type';
 import { Rank } from '../rank.type';
 import { SpecialityId } from '../speciality.type';
 import { VersionId } from '../version.type';
+import { WEngineId } from '../w-engine.type';
 
 const data: AgentData = {
     id: AgentId.CaesarKing,
@@ -16,6 +17,7 @@ const data: AgentData = {
     attributeId: AttributeId.Physical,
     specialityId: SpecialityId.Defense,
     factionId: FactionId.SonsOfCalydon,
+    signatureWEngineId: WEngineId.TusksOfFury,
 };
 
 const agent = new Agent(data);

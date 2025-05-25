@@ -3,6 +3,7 @@ import { FactionId } from './faction.type';
 import { Rank } from './rank.type';
 import { SpecialityId } from './speciality.type';
 import { VersionId } from './version.type';
+import { WEngineId } from './w-engine.type';
 
 export enum AgentId {
     AlexandrinaSebastiane = 'alexandrina-sebastiane',
@@ -49,4 +50,5 @@ export type AgentData = {
     attributeId: AttributeId;
     specialityId: SpecialityId;
     factionId: FactionId;
+    signatureWEngineId: WEngineId;
 }

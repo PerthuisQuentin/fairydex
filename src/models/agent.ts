@@ -4,6 +4,7 @@ import { FactionId } from '@/data/faction.type';
 import { Rank } from '@/data/rank.type';
 import { SpecialityId } from '@/data/speciality.type';
 import { VersionId } from '@/data/version.type';
+import { WEngineId } from '@/data/w-engine.type';
 
 export class Agent {
     public readonly id: AgentId;
@@ -14,6 +15,7 @@ export class Agent {
     public readonly specialityId: SpecialityId;
     public readonly factionId: FactionId;
     public readonly firstVersionId: VersionId;
+    public readonly signatureWEngineId: WEngineId;
 
     constructor(agentData: AgentData) {
         this.id = agentData.id;
@@ -24,5 +26,6 @@ export class Agent {
         this.specialityId = agentData.specialityId;
         this.factionId = agentData.factionId;
         this.firstVersionId = agentData.firstVersionId;
+        this.signatureWEngineId = agentData.signatureWEngineId;
     }
 }

@@ -6,6 +6,7 @@ import { FactionId } from '../faction.type';
 import { Rank } from '../rank.type';
 import { SpecialityId } from '../speciality.type';
 import { VersionId } from '../version.type';
+import { WEngineId } from '../w-engine.type';
 
 const data: AgentData = {
     id: AgentId.CorinWickes,
@@ -16,6 +17,7 @@ const data: AgentData = {
     attributeId: AttributeId.Physical,
     specialityId: SpecialityId.Attack,
     factionId: FactionId.VictoriaHousekeeping,
+    signatureWEngineId: WEngineId.Housekeeper,
 };
 
 const agent = new Agent(data);
