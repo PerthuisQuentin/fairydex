@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import AgentIcon from '@/components/agent/agent-icon';
 import AttributeIcon from '@/components/attribute/attribute-icon';
-import RankIcon from '@/components/rank/rank-icon';
+import AgentRankIcon from '@/components/rank/agent-rank-icon';
 import SpecialityIcon from '@/components/speciality/speciality-icon';
 import agents from '@/data/agents.data';
 import { Agent } from '@/models/agent';
@@ -21,7 +21,7 @@ const getAgentCard = (agent: Agent) => {
             <div className='ml-6'>
                 <h2 className="text-xl font-bold">{agent.name}</h2>
                 <div className="flex flex-row gap-2 items-center text-base">
-                    <RankIcon rank={agent.rank} />
+                    <AgentRankIcon rank={agent.rank} />
                     <AttributeIcon attributeId={agent.attributeId} />
                     <SpecialityIcon specialityId={agent.specialityId} />
                     <FactionIcon factionId={agent.factionId} />

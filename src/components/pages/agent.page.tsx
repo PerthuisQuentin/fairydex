@@ -1,11 +1,10 @@
-import Image from 'next/image';
-
 import AttributeIcon from '@/components/attribute/attribute-icon';
-import RankIcon from '@/components/rank/rank-icon';
+import AgentRankIcon from '@/components/rank/agent-rank-icon';
 import SpecialityIcon from '@/components/speciality/speciality-icon';
 import { AgentId } from '@/data/agent.type';
 import agents from '@/data/agents.data';
 
+import AgentSplashArt from '../agent/agent-splash-art';
 import FactionIcon from '../faction/faction-icon';
 
 type AgentProps = {
@@ -19,17 +18,12 @@ export default async function Agent({ agentId }: AgentProps) {
         <div className="mx-auto max-w-4xl mt-8 flex flex-col items-center">
             <h1 className="text-3xl font-bold mb-2">{agent.name}</h1>
             <div className="flex flex-row gap-2 items-center text-base mb-4">
-                <RankIcon rank={agent.rank} />
+                <AgentRankIcon rank={agent.rank} />
                 <AttributeIcon attributeId={agent.attributeId} />
                 <SpecialityIcon specialityId={agent.specialityId} />
                 <FactionIcon factionId={agent.factionId} />
             </div>
-            <Image
-                src={`/agent-splash-arts/${agent.id}.webp`}
-                height={500}
-                width={500}
-                alt={`Splash art of ${agent.name}`}
-            />
+            <AgentSplashArt agentId={agent.id} />
         </div>
     );
 }
