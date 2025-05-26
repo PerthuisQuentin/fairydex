@@ -7,7 +7,7 @@ import { WEngine } from '@/models/w-engine';
 
 import WEngineIcon from '../w-engine/w-engine-icon';
 
-const getWEngneCard = (wEngine: WEngine) => {
+const getWEngineCard = (wEngine: WEngine) => {
     return (
         <Link
             key={wEngine.id}
@@ -30,7 +30,7 @@ const getWEngneCard = (wEngine: WEngine) => {
 export default function WEngines() {
     return (
         <div className="mx-auto max-w-4xl">
-            {wEngines.getAll().map((wEngine) => getWEngneCard(wEngine))}
+            {wEngines.getAll().map((wEngine) => getWEngineCard(wEngine))}
         </div>
     );
 }

@@ -12,6 +12,7 @@ export default function Header() {
                     <Link href="/agents" className="hover:text-white transition">Agents</Link>
                     <Link href="/w-engines" className="hover:text-white transition">W-Engines</Link>
                     <Link href="/drive-discs" className="hover:text-white transition">Drive Discs</Link>
+                    <Link href="/bangboos" className="hover:text-white transition">Bangboos</Link>
                 </nav>
             </div>
         </header>
