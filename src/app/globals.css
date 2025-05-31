@@ -1,5 +1,33 @@
 @import "tailwindcss";
 
+@theme {
+  --color-z-grey: #121212;
+  --color-z-grey-2: #242424;
+  --color-z-black: #000000;
+  --color-z-white: #ffffff;
+  --color-z-green: #dcf24e;
+}
+
 body {
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+.bg-z-grid {
+  background-image: repeating-conic-gradient(var(--color-z-black) 0deg, var(--color-z-black) 90deg, var(--color-z-grey) 90deg, var(--color-z-grey) 180deg);
+  background-color: rgba(0, 0, 0, 0);
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  background-size: 4px 4px;
+}
+
+.bg-z-grid-reset {
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0);
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  background-size: auto;
 }
