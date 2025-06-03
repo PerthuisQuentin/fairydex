@@ -1,8 +1,14 @@
 import './globals.css';
 
 import type { Metadata } from 'next';
+import { Belanosima } from 'next/font/google';
 
 import Header from '@/components/layout/header';
+
+const belanosimaFont = Belanosima({
+  subsets: ['latin'],
+  weight: '600',
+});
 
 export const metadata: Metadata = {
   title: 'NameToFind',
@@ -17,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className='antialiased min-h-screen bg-zinc-900 text-gray-50'
+        className={`bg-zinc-900 text-gray-300 antialiased ${belanosimaFont.className}`}
       >
         <Header />
         <div className="pt-20">

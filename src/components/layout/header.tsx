@@ -7,7 +7,7 @@ export default function Header() {
                 <Link href="/" className="text-2xl hover:text-white transitio">
                     NameToFind
                 </Link>
-                <nav className="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
+                <nav className="hidden md:flex space-x-8 text-lg font-medium text-gray-300">
                     <Link href="/agents" className="hover:text-white transition">Agents</Link>
                     <Link href="/w-engines" className="hover:text-white transition">W-Engines</Link>
                     <Link href="/drive-discs" className="hover:text-white transition">Drive Discs</Link>
