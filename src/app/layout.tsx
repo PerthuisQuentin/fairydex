@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-zinc-900 text-gray-300 antialiased ${belanosimaFont.className}`}
+        className={`text-gray-300 antialiased ${belanosimaFont.className}`}
       >
         <Header />
         <div className="pt-20">

@@ -10,7 +10,7 @@ export const IconButton = ({ className, children }: IconButtonProps) => {
     const buttonClass = classNames(
         'group rounded-full w-12 h-12 text-z-white',
         'flex items-center justify-center',
-        'border-2 border-z-black bg-z-grey-2 bg-gradient-to-br from-white/10 to-z-grey/10',
+        'border-2 border-z-black bg-z-gray-2 bg-gradient-to-br from-white/10 to-z-gray/10',
         'transition-all duration-200 ease-out hover:bg-green-500',
         className
     );

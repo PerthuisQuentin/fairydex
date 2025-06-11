@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Header() {
     return (
-        <header className="fixed top-0 left-0 w-full z-50 bg-zinc-900 bg-opacity-80 border-b text-gray-300 py-4 px-6">
+        <header className="fixed top-0 left-0 w-full z-50 bg-z-gray bg-opacity-80 border-b text-gray-300 py-4 px-6">
             <div className="max-w-7xl mx-auto flex items-center justify-between">
                 <Link href="/" className="text-2xl hover:text-white transitio">
                     NameToFind
