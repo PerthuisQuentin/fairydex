@@ -10,8 +10,7 @@ export default async function AttributeIcon({ attributeId }: AttributeIconProps)
     return (
         <Image
             src={`/attribute-icons/${attributeId}.webp`}
-            height={32}
-            width={32}
+            fill={true}
             alt={`Attribute icon for ${attributeId}`}
         />
     );

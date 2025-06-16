@@ -10,8 +10,7 @@ export default async function BangbooRankIcon({ rank }: BangbooRankIconProps) {
     return (
         <Image
             src={`/rank-icons/bangboo-rank-${rank.toLowerCase()}.webp`}
-            height={32}
-            width={32}
+            fill={true}
             alt={`Bangboo rank icon for ${rank}`}
         />
     );

@@ -10,8 +10,7 @@ export default async function ItemRankIcon({ rank }: ItemRankIconProps) {
     return (
         <Image
             src={`/rank-icons/item-rank-${rank.toLowerCase()}.webp`}
-            height={32}
-            width={32}
+            fill={true}
             alt={`Item rank icon for ${rank}`}
         />
     );

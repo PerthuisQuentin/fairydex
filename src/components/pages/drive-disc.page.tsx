@@ -13,7 +13,9 @@ export default async function DriveDisc({ driveDiscId }: DriveDiscProps) {
     return (
         <div className="mx-auto max-w-4xl mt-8 flex flex-col items-center">
             <h1 className="text-3xl font-bold mb-4">{driveDisc.name}</h1>
-            <DriveDiscIcon driveDiscId={driveDisc.id} />
+            <div className='h-24 w-24 relative'>
+                <DriveDiscIcon driveDiscId={driveDisc.id} />
+            </div>
         </div>
     );
 }

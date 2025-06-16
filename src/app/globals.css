@@ -9,7 +9,10 @@
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
+  background-color: var(--color-z-gray);
   background-image: url('/background.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .bg-z-grid {

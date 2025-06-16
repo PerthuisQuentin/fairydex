@@ -16,10 +16,16 @@ export default async function WEngine({ wEngineId }: WEngineProps) {
         <div className="mx-auto max-w-4xl mt-8 flex flex-col items-center">
             <h1 className="text-3xl font-bold mb-2">{wEngine.name}</h1>
             <div className="flex flex-row gap-2 items-center text-base mb-4">
-                <ItemRankIcon rank={wEngine.rank} />
-                <SpecialityIcon specialityId={wEngine.specialityId} />
+                <div className='h-8 w-8 relative'>
+                    <ItemRankIcon rank={wEngine.rank} />
+                </div>
+                <div className='h-8 w-8 relative'>
+                    <SpecialityIcon specialityId={wEngine.specialityId} />
+                </div>
             </div>
-            <WEngineIcon wEngineId={wEngine.id} />
+            <div className='h-24 w-24 relative'>
+                <WEngineIcon wEngineId={wEngine.id} />
+            </div>
         </div>
     );
 }

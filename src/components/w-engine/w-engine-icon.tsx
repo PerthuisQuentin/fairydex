@@ -10,8 +10,7 @@ export default async function WEngineIcon({ wEngineId }: WEngineIconProps) {
     return (
         <Image
             src={`/w-engine-icons/${wEngineId}.webp`}
-            height={100}
-            width={100}
+            fill={true}
             alt={`W-Engine icon for ${wEngineId}`}
             className="rounded flex-shrink-0"
         />

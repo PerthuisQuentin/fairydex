@@ -10,8 +10,7 @@ export default async function SpecialityIcon({ specialityId }: SpecialityIconPro
     return (
         <Image
             src={`/speciality-icons/${specialityId}.webp`}
-            height={32}
-            width={32}
+            fill={true}
             alt={`Speciality icon for ${specialityId}`}
         />
     );

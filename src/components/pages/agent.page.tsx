@@ -18,10 +18,18 @@ export default async function Agent({ agentId }: AgentProps) {
         <div className="mx-auto max-w-4xl mt-8 flex flex-col items-center">
             <h1 className="text-3xl font-bold mb-2">{agent.name}</h1>
             <div className="flex flex-row gap-2 items-center text-base mb-4">
-                <AgentRankIcon rank={agent.rank} />
-                <AttributeIcon attributeId={agent.attributeId} />
-                <SpecialityIcon specialityId={agent.specialityId} />
-                <FactionIcon factionId={agent.factionId} />
+                <div className='h-8 w-8 relative'>
+                    <AgentRankIcon rank={agent.rank} />
+                </div>
+                <div className='h-8 w-8 relative'>
+                    <AttributeIcon attributeId={agent.attributeId} />
+                </div>
+                <div className='h-8 w-8 relative'>
+                    <SpecialityIcon specialityId={agent.specialityId} />
+                </div>
+                <div className='h-8 w-8 relative'>
+                    <FactionIcon factionId={agent.factionId} />
+                </div>
             </div>
             <AgentSplashArt agentId={agent.id} />
         </div>

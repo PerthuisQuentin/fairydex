@@ -15,12 +15,18 @@ const getWEngineCard = (wEngine: WEngine) => {
             className="flex items-center p-4 m-4 border border-gray-200 transition-transform duration-150 hover:scale-105 hover:shadow-lg"
             style={{ textDecoration: 'none', color: 'inherit' }}
         >
-            <WEngineIcon wEngineId={wEngine.id} />
+            <div className='h-24 w-24 relative'>
+                <WEngineIcon wEngineId={wEngine.id} />
+            </div>
             <div className='ml-6'>
                 <h2 className="text-xl font-bold">{wEngine.name}</h2>
                 <div className="flex flex-row gap-2 items-center text-base">
-                    <ItemRankIcon rank={wEngine.rank} />
-                    <SpecialityIcon specialityId={wEngine.specialityId} />
+                    <div className='h-8 w-8 relative'>
+                        <ItemRankIcon rank={wEngine.rank} />
+                    </div>
+                    <div className='h-8 w-8 relative'>
+                        <SpecialityIcon specialityId={wEngine.specialityId} />
+                    </div>
                 </div>
             </div>
         </Link>

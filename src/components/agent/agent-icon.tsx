@@ -10,8 +10,7 @@ export default async function AgentIcon({ agentId }: AgentIconProps) {
     return (
         <Image
             src={`/agent-icons/${agentId}.webp`}
-            height={100}
-            width={100}
+            fill={true}
             alt={`Agent icon for ${agentId}`}
             className="rounded flex-shrink-0"
         />

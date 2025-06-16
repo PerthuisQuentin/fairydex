@@ -10,8 +10,7 @@ export default async function BangbooIcon({ bangbooId }: BangbooIconProps) {
     return (
         <Image
             src={`/bangboo-icons/${bangbooId}.webp`}
-            height={100}
-            width={100}
+            fill={true}
             alt={`Bangboo icon for ${bangbooId}`}
             className="rounded flex-shrink-0"
         />

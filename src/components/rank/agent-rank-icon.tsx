@@ -10,8 +10,7 @@ export default async function AgentRankIcon({ rank }: AgentRankIconProps) {
     return (
         <Image
             src={`/rank-icons/agent-rank-${rank.toLowerCase()}.webp`}
-            height={32}
-            width={32}
+            fill={true}
             alt={`Agent rank icon for ${rank}`}
         />
     );

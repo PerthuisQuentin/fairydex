@@ -10,8 +10,7 @@ export default function FactionIcon({ factionId }: FactionIconProps) {
     return (
         <Image
             src={`/faction-icons/${factionId}.webp`}
-            height={32}
-            width={32}
+            fill={true}
             alt={`Faction icon for ${factionId}`}
         />
     );
