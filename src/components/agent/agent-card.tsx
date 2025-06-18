@@ -1,4 +1,3 @@
-import classNames from 'classnames';
 import Link from 'next/link';
 
 import AgentIcon from '@/components/agent/agent-icon';
@@ -7,26 +6,19 @@ import AgentRankIcon from '@/components/rank/agent-rank-icon';
 import SpecialityIcon from '@/components/speciality/speciality-icon';
 import { Agent } from '@/models/agent';
 
+import SelectableCard from '../ui/selectable-card';
+
 type AgentCardProps = {
     readonly agent: Agent
 };
 
 export default function AgentCard({ agent }: AgentCardProps) {
-    const cardClass = classNames(
-        'rounded-lg w-42 text-z-white m-2 p-[3px]',
-        'flex items-center justify-center',
-        'border-2 border-z-black bg-z-gray-2 bg-gradient-to-br from-white/10 to-z-gray/10',
-        'transition-all duration-200 ease-out hover:bg-green-500',
-    );
-
     return (
         <Link
             key={agent.id}
             href={`/agents/${agent.id}`}
-            className={cardClass}
-            style={{ textDecoration: 'none', color: 'inherit' }}
         >
-            <div className='rounded w-full h-full bg-z-grid p-2'>
+            <SelectableCard className='w-42'>
                 <div className='w-full aspect-square rounded relative'>
                     <AgentIcon agentId={agent.id} />
                 </div>
@@ -43,7 +35,7 @@ export default function AgentCard({ agent }: AgentCardProps) {
                         <AttributeIcon attributeId={agent.attributeId} />
                     </div>
                 </div>
-            </div>
+            </SelectableCard>
         </Link>
     );
 }
