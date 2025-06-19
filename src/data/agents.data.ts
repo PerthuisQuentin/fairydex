@@ -22,6 +22,7 @@ import Lighter from './agents/lighter';
 import LucianaDeMontefio from './agents/luciana-de-montefio';
 import NekomiyaMana from './agents/nekomiya-mana';
 import NicoleDemara from './agents/nicole-demara';
+import PanYinhu from './agents/pan-yinhu';
 import PiperWheel from './agents/piper-wheel';
 import PulchraFellini from './agents/pulchra-fellini';
 import Qingyi from './agents/qingyi';
@@ -33,6 +34,7 @@ import Trigger from './agents/trigger';
 import TsukishiroYanagi from './agents/tsukishiro-yanagi';
 import VivianBanshee from './agents/vivian-banshee';
 import VonLycaon from './agents/von-lycaon';
+import Yixuan from './agents/yi-xuan';
 import ZhuYuan from './agents/zhu-yuan';
 
 const agentList: Agent[] = [
@@ -57,6 +59,7 @@ const agentList: Agent[] = [
     LucianaDeMontefio,
     NekomiyaMana,
     NicoleDemara,
+    PanYinhu,
     PiperWheel,
     PulchraFellini,
     Qingyi,
@@ -68,6 +71,7 @@ const agentList: Agent[] = [
     TsukishiroYanagi,
     VivianBanshee,
     VonLycaon,
+    Yixuan,
     ZhuYuan,
 ];
 

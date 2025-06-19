@@ -7,6 +7,7 @@ import Avocaboo from './bangboos/avocaboo';
 import Baddieboo from './bangboos/baddieboo';
 import Bagboo from './bangboos/bagboo';
 import Bangvolver from './bangboos/bangvolver';
+import Belion from './bangboos/belion';
 import Boollseye from './bangboos/boollseye';
 import Booressure from './bangboos/booressure';
 import Brawlerboo from './bangboos/brawlerboo';
@@ -39,6 +40,7 @@ const bangbooList: Bangboo[] = [
     Baddieboo,
     Bagboo,
     Bangvolver,
+    Belion,
     Boollseye,
     Booressure,
     Brawlerboo,

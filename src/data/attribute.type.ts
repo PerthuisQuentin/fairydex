@@ -7,12 +7,13 @@ export enum AttributeFamilyId {
 }
 
 export enum AttributeId {
-    Physical = 'physical',
+    AuricInk = 'auric-ink',
+    Electric = 'electric',
     Ether = 'ether',
     Fire = 'fire',
-    Electric = 'electric',
-    Ice = 'ice',
     Frost = 'frost',
+    Ice = 'ice',
+    Physical = 'physical',
 }
 
 export type AttributeData = {

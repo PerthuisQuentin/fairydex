@@ -7,6 +7,7 @@ export enum DriveDiscId {
     FreedomBlues = 'freedom-blues',
     HormonePunk = 'hormone-punk',
     InfernoMetal = 'inferno-metal',
+    KingOfTheSummit = 'king-of-the-summit',
     PhaethonMelody = 'phaethon-melody',
     PolarMetal = 'polar-metal',
     ProtoPunk = 'proto-punk',
@@ -17,6 +18,7 @@ export enum DriveDiscId {
     SwingJazz = 'swing-jazz',
     ThunderMetal = 'thunder-metal',
     WoodpeckerElectro = 'woodpecker-electro',
+    YunkuiTales = 'yunkui-tales',
 }
 
 export type DriveDiscData = {

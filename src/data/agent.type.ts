@@ -22,11 +22,13 @@ export enum AgentId {
     HoshimiMiyabi = 'hoshimi-miyabi',
     HugoVlad = 'hugo-vlad',
     JaneDoe = 'jane-doe',
+    JuFuFu = 'ju-fufu',
     KoledaBelobog = 'koleda-belobog',
     Lighter = 'lighter',
     LucianaDeMontefio = 'luciana-de-montefio',
     NekomiyaMana = 'nekomiya-mana',
     NicoleDemara = 'nicole-demara',
+    PanYinhu = 'pan-yinhu',
     PiperWheel = 'piper-wheel',
     PulchraFellini = 'pulchra-fellini',
     Qingyi = 'qingyi',
@@ -38,6 +40,7 @@ export enum AgentId {
     TsukishiroYanagi = 'tsukishiro-yanagi',
     VivianBanshee = 'vivian-banshee',
     VonLycaon = 'von-lycaon',
+    YiXuan = 'yi-xuan',
     ZhuYuan = 'zhu-yuan',
 }
 

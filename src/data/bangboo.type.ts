@@ -9,6 +9,7 @@ export enum BangbooId {
     Baddieboo = 'baddieboo',
     Bagboo = 'bagboo',
     Bangvolver = 'bangvolver',
+    Belion = 'belion',
     Boollseye = 'boollseye',
     Booressure = 'booressure',
     Brawlerboo = 'brawlerboo',

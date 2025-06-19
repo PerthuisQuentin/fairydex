@@ -4,6 +4,7 @@ import { Speciality } from '@/models/speciality';
 import Anomaly from './specialities/anomaly';
 import Attack from './specialities/attack';
 import Defense from './specialities/defense';
+import Rupture from './specialities/rupture';
 import Stun from './specialities/stun';
 import Support from './specialities/support';
 
@@ -11,6 +12,7 @@ const specialityList: Speciality[] = [
     Anomaly,
     Attack,
     Defense,
+    Rupture,
     Stun,
     Support,
 ];

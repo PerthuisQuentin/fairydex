@@ -7,6 +7,7 @@ import BlazingLaurel from './w-engines/blazing-laurel';
 import BoxCutter from './w-engines/box-cutter';
 import BunnyBand from './w-engines/bunny-band';
 import CannonRotor from './w-engines/cannon-rotor';
+import CinderCobalt from './w-engines/cinder-cobalt';
 import DeepSeaVisitor from './w-engines/deep-sea-visitor';
 import DemaraBatteryMarkII from './w-engines/demara-battery-mark-ii';
 import DrillRigRedAxis from './w-engines/drill-rig-red-axis';
@@ -35,7 +36,11 @@ import MyriadEclipse from './w-engines/myriad-eclipse';
 import OriginalTransmorpher from './w-engines/original-transmorpher';
 import PeacekeeperSpecialized from './w-engines/peacekeeper-specialized';
 import PreciousFossilizedCore from './w-engines/precious-fossilized-core';
+import PuzzleSphere from './w-engines/puzzle-sphere';
+import QingmingBirdcage from './w-engines/qingming-birdcage';
+import RadiowaveJourney from './w-engines/radiowave-journey';
 import RainforestGourmet from './w-engines/rainforest-gourmet';
+import ReelProjector from './w-engines/reel-projector';
 import ReverbMarkI from './w-engines/reverb-mark-i';
 import ReverbMarkII from './w-engines/reverb-mark-ii';
 import ReverbMarkIII from './w-engines/reverb-mark-iii';
@@ -56,6 +61,7 @@ import TheBrimstone from './w-engines/the-brimstone';
 import TheRestrained from './w-engines/the-restrained';
 import TheVault from './w-engines/the-vault';
 import Timeweaver from './w-engines/timeweaver';
+import TremorTrigramVessel from './w-engines/tremor-trigram-vessel';
 import TusksOfFury from './w-engines/tusks-of-fury';
 import UnfetteredGameBall from './w-engines/unfettered-game-ball';
 import VortexArrow from './w-engines/vortex-arrow';
@@ -72,6 +78,7 @@ const wEngineList: WEngine[] = [
     BoxCutter,
     BunnyBand,
     CannonRotor,
+    CinderCobalt,
     DeepSeaVisitor,
     DemaraBatteryMarkII,
     DrillRigRedAxis,
@@ -100,7 +107,11 @@ const wEngineList: WEngine[] = [
     OriginalTransmorpher,
     PeacekeeperSpecialized,
     PreciousFossilizedCore,
+    PuzzleSphere,
+    QingmingBirdcage,
+    RadiowaveJourney,
     RainforestGourmet,
+    ReelProjector,
     ReverbMarkI,
     ReverbMarkII,
     ReverbMarkIII,
@@ -121,6 +132,7 @@ const wEngineList: WEngine[] = [
     TheRestrained,
     TheVault,
     Timeweaver,
+    TremorTrigramVessel,
     TusksOfFury,
     UnfetteredGameBall,
     VortexArrow,

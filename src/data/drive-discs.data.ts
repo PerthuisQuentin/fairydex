@@ -9,6 +9,7 @@ import FangedMetal from './drive-discs/fanged-metal';
 import FreedomBlues from './drive-discs/freedom-blues';
 import HormonePunk from './drive-discs/hormone-punk';
 import InfernoMetal from './drive-discs/inferno-metal';
+import KingOfTheSummit from './drive-discs/king-of-the-summit';
 import PhaethonMelody from './drive-discs/phaethon-melody';
 import PolarMetal from './drive-discs/polar-metal';
 import ProtoPunk from './drive-discs/proto-punk';
@@ -19,6 +20,7 @@ import SoulRock from './drive-discs/soul-rock';
 import SwingJazz from './drive-discs/swing-jazz';
 import ThunderMetal from './drive-discs/thunder-metal';
 import WoodpeckerElectro from './drive-discs/woodpecker-electro';
+import YunkuiTales from './drive-discs/yunkui-tales';
 
 const driveDiscList: DriveDisc[] = [
     AstralVoice,
@@ -29,6 +31,7 @@ const driveDiscList: DriveDisc[] = [
     FreedomBlues,
     HormonePunk,
     InfernoMetal,
+    KingOfTheSummit,
     PhaethonMelody,
     PolarMetal,
     ProtoPunk,
@@ -39,6 +42,7 @@ const driveDiscList: DriveDisc[] = [
     SwingJazz,
     ThunderMetal,
     WoodpeckerElectro,
+    YunkuiTales,
 ];
 
 const driveDiscs = new DriveDiscs(driveDiscList);
