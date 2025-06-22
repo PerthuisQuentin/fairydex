@@ -4,7 +4,7 @@ import AgentIcon from '@/components/agent/agent-icon';
 import AttributeIcon from '@/components/attribute/attribute-icon';
 import AgentRankIcon from '@/components/rank/agent-rank-icon';
 import SpecialityIcon from '@/components/speciality/speciality-icon';
-import { Agent } from '@/models/agent';
+import { Agent } from '@/models/agent/agent.model';
 
 import SelectableCard from '../ui/selectable-card';
 

@@ -1,6 +1,6 @@
 import { SpecialityId } from '@/data/speciality.type';
 
-import { Speciality } from './speciality';
+import { Speciality } from './speciality.model';
 
 export class Specialities {
     private readonly specialities: Speciality[];

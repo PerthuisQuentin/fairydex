@@ -1,4 +1,4 @@
-import { WEngine } from '@/models/w-engine';
+import { WEngine } from '@/models/w-engine/w-engine.model';
 
 import { AgentId } from '../agent.type';
 import { Rank } from '../rank.type';

@@ -1,5 +1,5 @@
-import { Agent } from '@/models/agent';
-import { Agents } from '@/models/agents';
+import { Agent } from '@/models/agent/agent.model';
+import { Agents } from '@/models/agent/agents.model';
 
 import { AgentId } from './agent.type';
 import AlexandrinaSebastiane from './agents/alexandrina-sebastiane';

@@ -1,5 +1,5 @@
-import { Specialities } from '@/models/specialities';
-import { Speciality } from '@/models/speciality';
+import { Specialities } from '@/models/speciality/specialities.model';
+import { Speciality } from '@/models/speciality/speciality.model';
 
 import Anomaly from './specialities/anomaly';
 import Attack from './specialities/attack';

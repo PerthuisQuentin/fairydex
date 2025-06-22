@@ -1,6 +1,6 @@
 import { DriveDiscId } from '@/data/drive-disc.type';
 
-import { DriveDisc } from './drive-disc';
+import { DriveDisc } from './drive-disc.model';
 
 export class DriveDiscs {
     private readonly driveDiscs: DriveDisc[];

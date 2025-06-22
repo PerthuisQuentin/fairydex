@@ -1,6 +1,6 @@
 import { AgentId } from '@/data/agent.type';
 
-import { Agent } from './agent';
+import { Agent } from './agent.model';
 
 export class Agents {
     private readonly agents: Agent[];

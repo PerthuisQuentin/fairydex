@@ -1,6 +1,6 @@
 import { FactionId } from '@/data/faction.type';
 
-import { Faction } from './faction';
+import { Faction } from './faction.model';
 
 export class Factions {
     private readonly factions: Faction[];

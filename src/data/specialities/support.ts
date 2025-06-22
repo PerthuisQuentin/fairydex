@@ -1,4 +1,4 @@
-import { Speciality } from '@/models/speciality';
+import { Speciality } from '@/models/speciality/speciality.model';
 
 import { SpecialityData, SpecialityId } from '../speciality.type';
 

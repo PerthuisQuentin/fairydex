@@ -1,5 +1,5 @@
-import { Attribute } from '@/models/attribute';
-import { Attributes } from '@/models/attributes';
+import { Attribute } from '@/models/attribute/attribute.model';
+import { Attributes } from '@/models/attribute/attributes.model';
 
 import { AttributeId } from './attribute.type';
 import AuricInk from './attributes/auric-ink';

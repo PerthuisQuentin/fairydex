@@ -1,4 +1,4 @@
-import { Attribute } from '@/models/attribute';
+import { Attribute } from '@/models/attribute/attribute.model';
 
 import { AttributeData, AttributeFamilyId, AttributeId } from '../attribute.type';
 

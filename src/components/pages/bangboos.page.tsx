@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import { bangboos } from '@/data/bangboos.data';
-import { Bangboo } from '@/models/bangboo';
+import { Bangboo } from '@/models/bangboo/bangboo.model';
 
 import BangbooIcon from '../bangboo/bangboo-icon';
 import BangbooRankIcon from '../rank/bangboo-rank-icon';

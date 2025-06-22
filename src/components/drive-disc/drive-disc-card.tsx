@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { DriveDisc } from '@/models/drive-disc';
+import { DriveDisc } from '@/models/drive-disc/drive-disc.model';
 
 import SelectableCard from '../ui/selectable-card';
 import DriveDiscIcon from './drive-disc-icon';

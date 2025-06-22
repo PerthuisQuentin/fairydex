@@ -1,4 +1,4 @@
-import { Faction } from '@/models/faction';
+import { Faction } from '@/models/faction/faction.model';
 
 import { FactionData, FactionId } from '../faction.type';
 

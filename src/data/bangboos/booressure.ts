@@ -1,4 +1,4 @@
-import { Bangboo } from '@/models/bangboo';
+import { Bangboo } from '@/models/bangboo/bangboo.model';
 
 import { BangbooData, BangbooId } from '../bangboo.type';
 import { Rank } from '../rank.type';

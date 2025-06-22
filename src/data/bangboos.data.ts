@@ -1,5 +1,5 @@
-import { Bangboo } from '@/models/bangboo';
-import { Bangboos } from '@/models/bangboos';
+import { Bangboo } from '@/models/bangboo/bangboo.model';
+import { Bangboos } from '@/models/bangboo/bangboos.model';
 
 import { BangbooId } from './bangboo.type';
 import AgentGulliver from './bangboos/agent-gulliver';

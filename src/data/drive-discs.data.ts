@@ -1,5 +1,5 @@
-import { DriveDisc } from '@/models/drive-disc';
-import { DriveDiscs } from '@/models/drive-discs';
+import { DriveDisc } from '@/models/drive-disc/drive-disc.model';
+import { DriveDiscs } from '@/models/drive-disc/drive-discs.model';
 
 import { DriveDiscId } from './drive-disc.type';
 import AstralVoice from './drive-discs/astral-voice';

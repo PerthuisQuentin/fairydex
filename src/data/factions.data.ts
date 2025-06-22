@@ -1,6 +1,6 @@
 
-import { Faction } from '@/models/faction';
-import { Factions } from '@/models/factions';
+import { Faction } from '@/models/faction/faction.model';
+import { Factions } from '@/models/faction/factions.model';
 
 import { FactionId } from './faction.type';
 import BelobogHeavyIndustries from './factions/belobog-heavy-industries';

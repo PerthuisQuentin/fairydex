@@ -1,4 +1,4 @@
-import { Version } from '@/models/version';
+import { Version } from '@/models/version/version.model';
 
 import { AgentId } from '../agent.type';
 import { VersionData, VersionId } from '../version.type';
@@ -37,7 +37,7 @@ const data: VersionData = {
                             isMain: true,
                             isNew: false,
                         },
-                          {
+                        {
                             agentId: AgentId.PulchraFellini,
                             isMain: false,
                             isNew: true,

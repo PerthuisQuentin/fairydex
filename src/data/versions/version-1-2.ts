@@ -1,4 +1,4 @@
-import { Version } from '@/models/version';
+import { Version } from '@/models/version/version.model';
 
 import { AgentId } from '../agent.type';
 import { VersionData, VersionId } from '../version.type';

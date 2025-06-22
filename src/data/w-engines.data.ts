@@ -1,5 +1,5 @@
-import { WEngine } from '@/models/w-engine';
-import { WEngines } from '@/models/w-engines';
+import { WEngine } from '@/models/w-engine/w-engine.model';
+import { WEngines } from '@/models/w-engine/w-engines.model';
 
 import { WEngineId } from './w-engine.type';
 import BashfulDemon from './w-engines/bashful-demon';

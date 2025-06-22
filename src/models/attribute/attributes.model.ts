@@ -1,6 +1,6 @@
 import { AttributeId } from '@/data/attribute.type';
 
-import { Attribute } from './attribute';
+import { Attribute } from './attribute.model';
 
 export class Attributes {
     private readonly attributes: Attribute[];

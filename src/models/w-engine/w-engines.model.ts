@@ -1,6 +1,6 @@
 import { WEngineId } from '@/data/w-engine.type';
 
-import { WEngine } from './w-engine';
+import { WEngine } from './w-engine.model';
 
 export class WEngines {
     private readonly wEngines: WEngine[];

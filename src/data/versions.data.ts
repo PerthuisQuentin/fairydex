@@ -1,4 +1,4 @@
-import { Version } from '@/models/version';
+import { Version } from '@/models/version/version.model';
 
 import Version_1_0 from './versions/version-1-0';
 import Version_1_1 from './versions/version-1-1';

@@ -1,4 +1,4 @@
-import { Agent } from '@/models/agent';
+import { Agent } from '@/models/agent/agent.model';
 
 import { AgentData, AgentId } from '../agent.type';
 import { AttributeId } from '../attribute.type';

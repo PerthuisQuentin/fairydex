@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import SpecialityIcon from '@/components/speciality/speciality-icon';
-import { WEngine } from '@/models/w-engine';
+import { WEngine } from '@/models/w-engine/w-engine.model';
 
 import ItemRankIcon from '../rank/item-rank-icon';
 import SelectableCard from '../ui/selectable-card';

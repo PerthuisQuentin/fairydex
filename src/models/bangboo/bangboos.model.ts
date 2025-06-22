@@ -1,6 +1,6 @@
 import { BangbooId } from '@/data/bangboo.type';
 
-import { Bangboo } from './bangboo';
+import { Bangboo } from './bangboo.model';
 
 export class Bangboos {
     private readonly bangboos: Bangboo[];
