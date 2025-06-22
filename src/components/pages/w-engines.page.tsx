@@ -1,4 +1,4 @@
-import wEngines from '@/data/w-engines.data';
+import { wEngines } from '@/data/w-engines.data';
 
 import WEngineCard from '../w-engine/w-engine-card';
 

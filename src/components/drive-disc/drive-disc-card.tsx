@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { DriveDisc } from '@/models/drive-disc';
 
 import SelectableCard from '../ui/selectable-card';
-import DriveDiscIcon from './attribute-icon';
+import DriveDiscIcon from './drive-disc-icon';
 
 type DriveDiscCardProps = {
     readonly driveDisc: DriveDisc

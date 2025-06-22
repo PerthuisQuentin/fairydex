@@ -1,4 +1,4 @@
-import agents from '@/data/agents.data';
+import { agents } from '@/data/agents.data';
 
 import AgentCard from '../agent/agent-card';
 

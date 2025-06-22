@@ -1,6 +1,7 @@
 import { Bangboo } from '@/models/bangboo';
 import { Bangboos } from '@/models/bangboos';
 
+import { BangbooId } from './bangboo.type';
 import AgentGulliver from './bangboos/agent-gulliver';
 import Amillion from './bangboos/amillion';
 import Avocaboo from './bangboos/avocaboo';
@@ -67,6 +68,6 @@ const bangbooList: Bangboo[] = [
     Sumoboo,
 ];
 
-const bangboos = new Bangboos(bangbooList);
+export const bangboos = new Bangboos(bangbooList);
 
-export default bangboos;
+export const getBangbooIconUrl = (bangbooId: BangbooId): string => `/bangboo-icons/${bangbooId}.webp`;

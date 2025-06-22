@@ -1,6 +1,7 @@
 import { Agent } from '@/models/agent';
 import { Agents } from '@/models/agents';
 
+import { AgentId } from './agent.type';
 import AlexandrinaSebastiane from './agents/alexandrina-sebastiane';
 import AnbyDemara from './agents/anby-demara';
 import AntonIvanov from './agents/anton-ivanov';
@@ -75,6 +76,8 @@ const agentList: Agent[] = [
     ZhuYuan,
 ];
 
-const agents = new Agents(agentList);
+export const agents = new Agents(agentList);
 
-export default agents;
+export const getAgentSplashArtUrl = (agentId: AgentId): string => `/agent-splash-arts/${agentId}.webp`;
+
+export const getAgentIconUrl = (agentId: AgentId): string => `/agent-icons/${agentId}.webp`;

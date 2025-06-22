@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import { DriveDiscId } from '@/data/drive-disc.type';
+import { getDriveDiscIconUrl } from '@/data/drive-discs.data';
 
 type DriveDiscIconProps = {
     readonly driveDiscId: DriveDiscId;
@@ -9,7 +10,7 @@ type DriveDiscIconProps = {
 export default async function DriveDiscIcon({ driveDiscId }: DriveDiscIconProps) {
     return (
         <Image
-            src={`/drive-disc-icons/${driveDiscId}.webp`}
+            src={getDriveDiscIconUrl(driveDiscId)}
             fill={true}
             alt={`Attribute icon for ${driveDiscId}`}
         />

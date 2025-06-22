@@ -1,6 +1,7 @@
 import { DriveDisc } from '@/models/drive-disc';
 import { DriveDiscs } from '@/models/drive-discs';
 
+import { DriveDiscId } from './drive-disc.type';
 import AstralVoice from './drive-discs/astral-voice';
 import BranchAndBlade from './drive-discs/branch-and-blade';
 import ChaosJazz from './drive-discs/chaos-jazz';
@@ -45,6 +46,6 @@ const driveDiscList: DriveDisc[] = [
     YunkuiTales,
 ];
 
-const driveDiscs = new DriveDiscs(driveDiscList);
+export const driveDiscs = new DriveDiscs(driveDiscList);
 
-export default driveDiscs;
+export const getDriveDiscIconUrl = (driveDiscId: DriveDiscId): string => `/drive-disc-icons/${driveDiscId}.webp`;

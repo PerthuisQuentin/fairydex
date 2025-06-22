@@ -7,6 +7,7 @@ import Defense from './specialities/defense';
 import Rupture from './specialities/rupture';
 import Stun from './specialities/stun';
 import Support from './specialities/support';
+import { SpecialityId } from './speciality.type';
 
 const specialityList: Speciality[] = [
     Anomaly,
@@ -18,6 +19,6 @@ const specialityList: Speciality[] = [
 ];
 
 
-const specialities = new Specialities(specialityList);
+export const specialities = new Specialities(specialityList);
 
-export default specialities;
+export const getSpecialityIconUrl = (specialityId: SpecialityId): string => `/speciality-icons/${specialityId}.webp`;

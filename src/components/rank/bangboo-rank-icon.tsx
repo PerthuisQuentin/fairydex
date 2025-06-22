@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+import { getBangbooRankIconUrl } from '@/data/rank.data';
 import { Rank } from '@/data/rank.type';
 
 type BangbooRankIconProps = {
@@ -9,7 +10,7 @@ type BangbooRankIconProps = {
 export default async function BangbooRankIcon({ rank }: BangbooRankIconProps) {
     return (
         <Image
-            src={`/rank-icons/bangboo-rank-${rank.toLowerCase()}.webp`}
+            src={getBangbooRankIconUrl(rank)}
             fill={true}
             alt={`Bangboo rank icon for ${rank}`}
         />

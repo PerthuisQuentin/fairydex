@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import { BangbooId } from '@/data/bangboo.type';
+import { getBangbooIconUrl } from '@/data/bangboos.data';
 
 type BangbooIconProps = {
     readonly bangbooId: BangbooId;
@@ -9,7 +10,7 @@ type BangbooIconProps = {
 export default async function BangbooIcon({ bangbooId }: BangbooIconProps) {
     return (
         <Image
-            src={`/bangboo-icons/${bangbooId}.webp`}
+            src={getBangbooIconUrl(bangbooId)}
             fill={true}
             alt={`Bangboo icon for ${bangbooId}`}
             className="rounded flex-shrink-0"

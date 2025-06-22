@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+import { getAgentRankIconUrl } from '@/data/rank.data';
 import { Rank } from '@/data/rank.type';
 
 type AgentRankIconProps = {
@@ -9,7 +10,7 @@ type AgentRankIconProps = {
 export default async function AgentRankIcon({ rank }: AgentRankIconProps) {
     return (
         <Image
-            src={`/rank-icons/agent-rank-${rank.toLowerCase()}.webp`}
+            src={getAgentRankIconUrl(rank)}
             fill={true}
             alt={`Agent rank icon for ${rank}`}
         />

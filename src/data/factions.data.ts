@@ -2,6 +2,7 @@
 import { Faction } from '@/models/faction';
 import { Factions } from '@/models/factions';
 
+import { FactionId } from './faction.type';
 import BelobogHeavyIndustries from './factions/belobog-heavy-industries';
 import CriminalInvestigationSpecialResponseTeam from './factions/criminal-investigation-special-response-team';
 import CunningHares from './factions/cunning-hares';
@@ -28,6 +29,6 @@ const factionList: Faction[] = [
     YunkuiSummit,
 ];
 
-const factions = new Factions(factionList);
+export const factions = new Factions(factionList);
 
-export default factions;
+export const getFactionIconUrl = (factionId: FactionId): string => `/faction-icons/${factionId}.webp`;

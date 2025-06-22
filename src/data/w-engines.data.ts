@@ -1,6 +1,7 @@
 import { WEngine } from '@/models/w-engine';
 import { WEngines } from '@/models/w-engines';
 
+import { WEngineId } from './w-engine.type';
 import BashfulDemon from './w-engines/bashful-demon';
 import BigCylinder from './w-engines/big-cylinder';
 import BlazingLaurel from './w-engines/blazing-laurel';
@@ -143,6 +144,6 @@ const wEngineList: WEngine[] = [
     ZanshinHerbCase,
 ];
 
-const wEngines = new WEngines(wEngineList);
+export const wEngines = new WEngines(wEngineList);
 
-export default wEngines;
+export const getWEngineIconUrl = (wEngineId: WEngineId): string => `/w-engine-icons/${wEngineId}.webp`;

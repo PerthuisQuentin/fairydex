@@ -1,6 +1,6 @@
 import SpecialityIcon from '@/components/speciality/speciality-icon';
 import { WEngineId } from '@/data/w-engine.type';
-import wEngines from '@/data/w-engines.data';
+import { wEngines } from '@/data/w-engines.data';
 
 import ItemRankIcon from '../rank/item-rank-icon';
 import WEngineIcon from '../w-engine/w-engine-icon';

@@ -10,7 +10,7 @@ import Version_1_6 from './versions/version-1-6';
 import Version_1_7 from './versions/version-1-7';
 import Version_2_0 from './versions/version-2-0';
 
-const versions: Version[] = [
+export const versions: Version[] = [
     Version_1_0,
     Version_1_1,
     Version_1_2,
@@ -21,5 +21,3 @@ const versions: Version[] = [
     Version_1_7,
     Version_2_0,
 ];
-
-export default versions;

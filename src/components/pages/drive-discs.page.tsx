@@ -1,4 +1,4 @@
-import driveDiscs from '@/data/drive-discs.data';
+import { driveDiscs } from '@/data/drive-discs.data';
 
 import DriveDiscCard from '../drive-disc/drive-disc-card';
 

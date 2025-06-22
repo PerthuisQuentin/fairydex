@@ -1,6 +1,7 @@
 import { Attribute } from '@/models/attribute';
 import { Attributes } from '@/models/attributes';
 
+import { AttributeId } from './attribute.type';
 import AuricInk from './attributes/auric-ink';
 import Electric from './attributes/electric';
 import Ether from './attributes/ether';
@@ -19,6 +20,6 @@ const attributeList: Attribute[] = [
     Physical,
 ];
 
-const attributes = new Attributes(attributeList);
+export const attributes = new Attributes(attributeList);
 
-export default attributes;
+export const getAttributeIconUrl = (attributeId: AttributeId): string => `/attribute-icons/${attributeId}.webp`;

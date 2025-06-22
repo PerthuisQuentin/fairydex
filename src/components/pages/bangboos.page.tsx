@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import bangboos from '@/data/bangboos.data';
+import { bangboos } from '@/data/bangboos.data';
 import { Bangboo } from '@/models/bangboo';
 
 import BangbooIcon from '../bangboo/bangboo-icon';

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 import { AttributeId } from '@/data/attribute.type';
+import { getAttributeIconUrl } from '@/data/attributes.data';
 
 type AttributeIconProps = {
     readonly attributeId: AttributeId;
@@ -9,8 +10,8 @@ type AttributeIconProps = {
 export default async function AttributeIcon({ attributeId }: AttributeIconProps) {
     return (
         <Image
-            src={`/attribute-icons/${attributeId}.webp`}
             fill={true}
+            src={getAttributeIconUrl(attributeId)}
             alt={`Attribute icon for ${attributeId}`}
         />
     );
