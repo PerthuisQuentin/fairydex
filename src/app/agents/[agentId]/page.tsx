@@ -15,7 +15,6 @@ export async function generateMetadata({ params }: AgentPageProps): Promise<Meta
     return {
         openGraph: {
             title: agent.name,
-            description: agent.name,
             url: `/agents/${agentId}`,
             images: [
                 {
