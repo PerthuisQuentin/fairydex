@@ -11,6 +11,7 @@ const belanosimaFont = Belanosima({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.BASE_URL!),
   title: 'NameToFind',
   description: 'ZZZ tools',
 };
