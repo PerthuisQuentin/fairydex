@@ -1,6 +1,6 @@
 import { agents } from '@/data/agents.data';
 
-import AgentCard from '../agent/agent-card';
+import AgentCard from '../agent/agent-card.component';
 
 export default function Agents() {
     return (

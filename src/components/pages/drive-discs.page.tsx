@@ -1,6 +1,6 @@
 import { driveDiscs } from '@/data/drive-discs.data';
 
-import DriveDiscCard from '../drive-disc/drive-disc-card';
+import DriveDiscCard from '../drive-disc/drive-disc-card.component';
 
 export default function DriveDiscs() {
     return (

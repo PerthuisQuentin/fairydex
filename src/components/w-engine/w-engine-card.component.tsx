@@ -1,11 +1,11 @@
 import Link from 'next/link';
 
-import SpecialityIcon from '@/components/speciality/speciality-icon';
+import SpecialityIcon from '@/components/speciality/speciality-icon.component';
 import { WEngine } from '@/models/w-engine/w-engine.model';
 
-import ItemRankIcon from '../rank/item-rank-icon';
-import SelectableCard from '../ui/selectable-card';
-import WEngineIcon from './w-engine-icon';
+import ItemRankIcon from '../rank/item-rank-icon.component';
+import SelectableCard from '../ui/selectable-card.component';
+import WEngineIcon from './w-engine-icon.component';
 
 type WEngineCardProps = {
     readonly wEngine: WEngine

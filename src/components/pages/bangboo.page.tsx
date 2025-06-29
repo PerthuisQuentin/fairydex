@@ -1,8 +1,8 @@
 import { BangbooId } from '@/data/bangboo.type';
 import { bangboos } from '@/data/bangboos.data';
 
-import BangbooIcon from '../bangboo/bangboo-icon';
-import BangbooRankIcon from '../rank/bangboo-rank-icon';
+import BangbooIcon from '../bangboo/bangboo-icon.component';
+import BangbooRankIcon from '../rank/bangboo-rank-icon.component';
 
 type BangbooProps = {
     readonly bangbooId: BangbooId

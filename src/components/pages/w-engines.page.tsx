@@ -1,6 +1,6 @@
 import { wEngines } from '@/data/w-engines.data';
 
-import WEngineCard from '../w-engine/w-engine-card';
+import WEngineCard from '../w-engine/w-engine-card.component';
 
 export default function WEngines() {
     return (

@@ -1,9 +1,9 @@
-import SpecialityIcon from '@/components/speciality/speciality-icon';
+import SpecialityIcon from '@/components/speciality/speciality-icon.component';
 import { WEngineId } from '@/data/w-engine.type';
 import { wEngines } from '@/data/w-engines.data';
 
-import ItemRankIcon from '../rank/item-rank-icon';
-import WEngineIcon from '../w-engine/w-engine-icon';
+import ItemRankIcon from '../rank/item-rank-icon.component';
+import WEngineIcon from '../w-engine/w-engine-icon.component';
 
 type WEngineProps = {
     readonly wEngineId: WEngineId

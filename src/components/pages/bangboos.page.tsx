@@ -1,6 +1,6 @@
 import { bangboos } from '@/data/bangboos.data';
 
-import BangbooCard from '../bangboo/bangboo-card';
+import BangbooCard from '../bangboo/bangboo-card.component';
 
 export default function Bangboos() {
     return (

@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 import { Bangboo } from '@/models/bangboo/bangboo.model';
 
-import BangbooRankIcon from '../rank/bangboo-rank-icon';
-import SelectableCard from '../ui/selectable-card';
-import BangbooIcon from './bangboo-icon';
+import BangbooRankIcon from '../rank/bangboo-rank-icon.component';
+import SelectableCard from '../ui/selectable-card.component';
+import BangbooIcon from './bangboo-icon.component';
 
 type BangbooCardProps = {
     readonly bangboo: Bangboo

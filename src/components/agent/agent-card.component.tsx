@@ -1,12 +1,12 @@
 import Link from 'next/link';
 
-import AgentIcon from '@/components/agent/agent-icon';
-import AttributeIcon from '@/components/attribute/attribute-icon';
-import AgentRankIcon from '@/components/rank/agent-rank-icon';
-import SpecialityIcon from '@/components/speciality/speciality-icon';
+import AgentIcon from '@/components/agent/agent-icon.component';
+import AttributeIcon from '@/components/attribute/attribute-icon.component';
+import AgentRankIcon from '@/components/rank/agent-rank-icon.component';
+import SpecialityIcon from '@/components/speciality/speciality-icon.component';
 import { Agent } from '@/models/agent/agent.model';
 
-import SelectableCard from '../ui/selectable-card';
+import SelectableCard from '../ui/selectable-card.component';
 
 type AgentCardProps = {
     readonly agent: Agent

@@ -1,7 +1,7 @@
 import { PowerIcon } from '@heroicons/react/24/outline';
 
-import { IconButton } from '../ui/icon-button';
-import { TextButton } from '../ui/text-button';
+import { IconButton } from '../ui/icon-button.component';
+import { TextButton } from '../ui/text-button.component';
 
 export default function Home() {
     return (

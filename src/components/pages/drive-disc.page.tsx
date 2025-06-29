@@ -1,7 +1,7 @@
 import { DriveDiscId } from '@/data/drive-disc.type';
 import { driveDiscs } from '@/data/drive-discs.data';
 
-import DriveDiscIcon from '../drive-disc/drive-disc-icon';
+import DriveDiscIcon from '../drive-disc/drive-disc-icon.component';
 
 type DriveDiscProps = {
     readonly driveDiscId: DriveDiscId

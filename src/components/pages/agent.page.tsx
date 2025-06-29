@@ -1,11 +1,11 @@
-import AttributeIcon from '@/components/attribute/attribute-icon';
-import AgentRankIcon from '@/components/rank/agent-rank-icon';
-import SpecialityIcon from '@/components/speciality/speciality-icon';
+import AttributeIcon from '@/components/attribute/attribute-icon.component';
+import AgentRankIcon from '@/components/rank/agent-rank-icon.component';
+import SpecialityIcon from '@/components/speciality/speciality-icon.component';
 import { AgentId } from '@/data/agent.type';
 import { agents } from '@/data/agents.data';
 
-import AgentSplashArt from '../agent/agent-splash-art';
-import FactionIcon from '../faction/faction-icon';
+import AgentSplashArt from '../agent/agent-splash-art.component';
+import FactionIcon from '../faction/faction-icon.component';
 
 type AgentProps = {
     readonly agentId: AgentId
