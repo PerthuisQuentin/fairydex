@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
-import Agent from '@/components/pages/agent.page';
-import { AgentId } from '@/data/agent.type';
-import { agents, getAgentIconUrl } from '@/data/agents.data';
+import { AgentId } from '@/agent/data/agent.type';
+import { agents, getAgentIconUrl } from '@/agent/data/agents.data';
+import Agent from '@/agent/pages/agent.page';
 
 type AgentPageProps = {
     params: Promise<{ agentId: AgentId }>

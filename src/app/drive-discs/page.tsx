@@ -1,3 +1,3 @@
-import DriveDiscs from '@/components/pages/drive-discs.page';
+import DriveDiscs from '@/drive-disc/pages/drive-discs.page';
 
 export default DriveDiscs;

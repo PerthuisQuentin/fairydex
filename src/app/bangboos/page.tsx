@@ -1,3 +1,3 @@
-import Bangboos from '@/components/pages/bangboos.page';
+import Bangboos from '@/bangboo/pages/bangboos.page';
 
 export default Bangboos;

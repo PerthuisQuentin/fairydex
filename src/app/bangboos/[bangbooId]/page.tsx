@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
-import Bangboo from '@/components/pages/bangboo.page';
-import { BangbooId } from '@/data/bangboo.type';
-import { bangboos, getBangbooIconUrl } from '@/data/bangboos.data';
+import { BangbooId } from '@/bangboo/data/bangboo.type';
+import { bangboos, getBangbooIconUrl } from '@/bangboo/data/bangboos.data';
+import Bangboo from '@/bangboo/pages/bangboo.page';
 
 type BangbooPageProps = {
     params: Promise<{ bangbooId: BangbooId }>

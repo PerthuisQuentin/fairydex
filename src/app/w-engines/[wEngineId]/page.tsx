@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
-import WEngine from '@/components/pages/w-engine.page';
-import { WEngineId } from '@/data/w-engine.type';
-import { getWEngineIconUrl, wEngines } from '@/data/w-engines.data';
+import { WEngineId } from '@/w-engine/data/w-engine.type';
+import { getWEngineIconUrl, wEngines } from '@/w-engine/data/w-engines.data';
+import WEngine from '@/w-engine/pages/w-engine.page';
 
 type WEnginePageProps = {
     params: Promise<{ wEngineId: WEngineId }>

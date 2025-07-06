@@ -1,3 +1,3 @@
-import Agents from '@/components/pages/agents.page';
+import Agents from '@/agent/pages/agents.page';
 
 export default Agents;

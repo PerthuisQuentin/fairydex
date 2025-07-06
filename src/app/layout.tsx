@@ -3,7 +3,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Belanosima } from 'next/font/google';
 
-import Header from '@/components/layout/header.component';
+import Header from '@/common/components/header.component';
 
 const belanosimaFont = Belanosima({
   subsets: ['latin'],

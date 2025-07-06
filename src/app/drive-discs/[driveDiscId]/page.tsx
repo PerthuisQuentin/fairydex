@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
-import DriveDisc from '@/components/pages/drive-disc.page';
-import { DriveDiscId } from '@/data/drive-disc.type';
-import { driveDiscs, getDriveDiscIconUrl } from '@/data/drive-discs.data';
+import { DriveDiscId } from '@/drive-disc/data/drive-disc.type';
+import { driveDiscs, getDriveDiscIconUrl } from '@/drive-disc/data/drive-discs.data';
+import DriveDisc from '@/drive-disc/pages/drive-disc.page';
 
 type DriveDiscPageProps = {
     params: Promise<{ driveDiscId: DriveDiscId }>
