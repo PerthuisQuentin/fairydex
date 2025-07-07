@@ -1,7 +1,7 @@
 import AttributeIcon from '@/attribute/components/attribute-icon.component';
 import { AttributeId } from '@/attribute/data/attribute.type';
 import { attributes } from '@/attribute/data/attributes.data';
-import SelectableCard from '@/common/components/ui/selectable-card.component';
+import DottedCard from '@/common/components/ui/dotted-card.component';
 import SpecialityIcon from '@/speciality/components/speciality-icon.component';
 import { SpecialityId } from '@/speciality/data/speciality.type';
 
@@ -74,11 +74,11 @@ export default function AgentStats() {
                     className="p-2 flex flex-wrap justify-center items-center w-full h-full bg-z-gray-2 rounded-xl border-2 border-z-black mx-1 my-1"
                 >
                     {filteredAgents.map((agent) => (
-                        <SelectableCard key={agent.id} className="w-20 min-w-20">
+                        <DottedCard selectable={true} key={agent.id} className="w-20 min-w-20">
                             <div className="w-full aspect-square rounded relative">
                                 <AgentIcon agentId={agent.id} />
                             </div>
-                        </SelectableCard>
+                        </DottedCard>
                     ))}
                 </div>
             </td>

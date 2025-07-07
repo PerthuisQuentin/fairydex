@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import SelectableCard from '@/common/components/ui/selectable-card.component';
+import DottedCard from '@/common/components/ui/dotted-card.component';
 import ItemRankIcon from '@/rank/components/item-rank-icon.component';
 import SpecialityIcon from '@/speciality/components/speciality-icon.component';
 import WEngineIcon from '@/w-engine/components/w-engine-icon.component';
@@ -16,7 +16,7 @@ export default function WEngineCard({ wEngine }: WEngineCardProps) {
             key={wEngine.id}
             href={`/w-engines/${wEngine.id}`}
         >
-            <SelectableCard className='w-42'>
+            <DottedCard selectable={true} className='w-42'>
                 <div className='w-full aspect-square rounded relative'>
                     <WEngineIcon wEngineId={wEngine.id} />
                 </div>
@@ -30,7 +30,7 @@ export default function WEngineCard({ wEngine }: WEngineCardProps) {
                         <SpecialityIcon specialityId={wEngine.specialityId} />
                     </div>
                 </div>
-            </SelectableCard>
+            </DottedCard>
         </Link>
     );
 }

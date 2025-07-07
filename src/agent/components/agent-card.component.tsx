@@ -3,7 +3,7 @@ import Link from 'next/link';
 import AgentIcon from '@/agent/components/agent-icon.component';
 import { Agent } from '@/agent/models/agent.model';
 import AttributeIcon from '@/attribute/components/attribute-icon.component';
-import SelectableCard from '@/common/components/ui/selectable-card.component';
+import DottedCard from '@/common/components/ui/dotted-card.component';
 import AgentRankIcon from '@/rank/components/agent-rank-icon.component';
 import SpecialityIcon from '@/speciality/components/speciality-icon.component';
 
@@ -17,7 +17,7 @@ export default function AgentCard({ agent }: AgentCardProps) {
             key={agent.id}
             href={`/agents/${agent.id}`}
         >
-            <SelectableCard className='w-42'>
+            <DottedCard selectable={true} className='w-42'>
                 <div className='w-full aspect-square rounded relative'>
                     <AgentIcon agentId={agent.id} />
                 </div>
@@ -34,7 +34,7 @@ export default function AgentCard({ agent }: AgentCardProps) {
                         <AttributeIcon attributeId={agent.attributeId} />
                     </div>
                 </div>
-            </SelectableCard>
+            </DottedCard>
         </Link>
     );
 }

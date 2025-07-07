@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import BangbooIcon from '@/bangboo/components/bangboo-icon.component';
 import { Bangboo } from '@/bangboo/models/bangboo.model';
-import SelectableCard from '@/common/components/ui/selectable-card.component';
+import DottedCard from '@/common/components/ui/dotted-card.component';
 import BangbooRankIcon from '@/rank/components/bangboo-rank-icon.component';
 
 type BangbooCardProps = {
@@ -15,7 +15,7 @@ export default function BangbooCard({ bangboo }: BangbooCardProps) {
             key={bangboo.id}
             href={`/bangboos/${bangboo.id}`}
         >
-            <SelectableCard className='w-42'>
+            <DottedCard selectable={true} className='w-42'>
                 <div className='w-full aspect-square rounded relative'>
                     <BangbooIcon bangbooId={bangboo.id} />
                 </div>
@@ -26,7 +26,7 @@ export default function BangbooCard({ bangboo }: BangbooCardProps) {
                         </div>
                     </div>
                 </div>
-            </SelectableCard>
+            </DottedCard>
         </Link>
     );
 }

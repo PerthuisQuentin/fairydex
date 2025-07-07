@@ -4,7 +4,7 @@ import AgentIcon from '@/agent/components/agent-icon.component';
 import { AgentId } from '@/agent/data/agent.type';
 import BangbooIcon from '@/bangboo/components/bangboo-icon.component';
 import { BangbooId } from '@/bangboo/data/bangboo.type';
-import SelectableCard from '@/common/components/ui/selectable-card.component';
+import DottedCard from '@/common/components/ui/dotted-card.component';
 import DriveDiscIcon from '@/drive-disc/components/drive-disc-icon.component';
 import { DriveDiscId } from '@/drive-disc/data/drive-disc.type';
 import WEngineIcon from '@/w-engine/components/w-engine-icon.component';
@@ -13,14 +13,14 @@ import { WEngineId } from '@/w-engine/data/w-engine.type';
 function HomeCard({ icon, label, href }: { readonly icon: React.ReactNode; readonly label: string; readonly href: string }) {
     return (
         <Link href={href} className="contents">
-            <SelectableCard>
+            <DottedCard selectable={true}>
                 <div className="flex flex-col items-center">
                     <div className="relative w-32 h-32">
                         {icon}
                     </div>
                     <span className="mt-2 text-2xl">{label}</span>
                 </div>
-            </SelectableCard>
+            </DottedCard>
         </Link>
     );
 }

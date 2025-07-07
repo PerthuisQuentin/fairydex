@@ -45,7 +45,7 @@ A typical component file:
 ```tsx
 import Link from 'next/link';
 import { Agent } from '@/models/agent/agent.model';
-import SelectableCard from '../ui/selectable-card.component';
+import DottedCard from '../ui/selectable-card.component';
 
 type AgentCardProps = {
   readonly agent: Agent;
@@ -54,9 +54,9 @@ type AgentCardProps = {
 export default function AgentCard({ agent }: AgentCardProps) {
   return (
     <Link key={agent.id} href={`/agents/${agent.id}`}>
-      <SelectableCard className="w-42">
+      <DottedCard className="w-42">
         {/* ...component content... */}
-      </SelectableCard>
+      </DottedCard>
     </Link>
   );
 }
