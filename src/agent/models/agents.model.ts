@@ -1,6 +1,14 @@
 import { AgentId } from '@/agent/data/agent.type';
+import { AttributeFamilyId } from '@/attribute/data/attribute.type';
+import { attributes } from '@/attribute/data/attributes.data';
+import { SpecialityId } from '@/speciality/data/speciality.type';
 
 import { Agent } from './agent.model';
+
+export type FilterCriteria = {
+    attributeFamilyIds?: AttributeFamilyId[];
+    specialityIds?: SpecialityId[];
+}
 
 export class Agents {
     private readonly agents: Agent[];
@@ -19,7 +27,18 @@ export class Agents {
         return this.agentsById.get(id);
     }
 
-    getAll(): Agent[] {
-        return this.agents;
+    getAll(filterCriteria?: FilterCriteria): Agent[] {
+        return this.agents.filter((agent) => {
+            if (filterCriteria?.attributeFamilyIds) {
+                const attribute = attributes.getById(agent.attributeId);
+                if (!attribute || !filterCriteria.attributeFamilyIds.includes(attribute.familyId)) {
+                    return false;
+                }
+            }
+            if (filterCriteria?.specialityIds && !filterCriteria.specialityIds.includes(agent.specialityId)) {
+                return false;
+            }
+            return true;
+        });
     }
 }
