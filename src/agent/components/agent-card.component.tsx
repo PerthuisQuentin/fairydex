@@ -17,7 +17,7 @@ export default function AgentCard({ agent }: AgentCardProps) {
             key={agent.id}
             href={`/agents/${agent.id}`}
         >
-            <DottedCard selectable={true} className='w-42'>
+            <DottedCard selectable={true} containerClass='w-42'>
                 <div className='w-full aspect-square rounded relative'>
                     <AgentIcon agentId={agent.id} />
                 </div>

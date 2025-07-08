@@ -54,7 +54,7 @@ type AgentCardProps = {
 export default function AgentCard({ agent }: AgentCardProps) {
   return (
     <Link key={agent.id} href={`/agents/${agent.id}`}>
-      <DottedCard className="w-42">
+      <DottedCard containerClass="w-42">
         {/* ...component content... */}
       </DottedCard>
     </Link>
