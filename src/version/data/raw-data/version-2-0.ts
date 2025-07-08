@@ -50,6 +50,50 @@ const data: VersionData = {
                 }
             ]
         },
+                {
+            channels: [
+                {
+                    name: 'Fu-rocious Feline',
+                    agents: [
+                        {
+                            agentId: AgentId.JuFufu,
+                            isMain: true,
+                            isNew: true,
+                        },
+                        {
+                            agentId: AgentId.BenBigger,
+                            isMain: false,
+                            isNew: false,
+                        },
+                        {
+                            agentId: AgentId.CorinWickes,
+                            isMain: false,
+                            isNew: false,
+                        }
+                    ]
+                },
+                {
+                    name: 'Ember-Crowned Overlord',
+                    agents: [
+                        {
+                            agentId: AgentId.CaesarKing,
+                            isMain: true,
+                            isNew: false,
+                        },
+                        {
+                            agentId: AgentId.BenBigger,
+                            isMain: false,
+                            isNew: false,
+                        },
+                        {
+                            agentId: AgentId.CorinWickes,
+                            isMain: false,
+                            isNew: false,
+                        }
+                    ]
+                }
+            ]
+        },
     ]
 };
 

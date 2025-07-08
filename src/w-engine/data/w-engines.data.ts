@@ -46,6 +46,7 @@ import ReverbMarkI from './raw-data/reverb-mark-i';
 import ReverbMarkII from './raw-data/reverb-mark-ii';
 import ReverbMarkIII from './raw-data/reverb-mark-iii';
 import RiotSuppressorMarkVI from './raw-data/riot-suppressor-mark-vi';
+import RoaringFurnace from './raw-data/roaring-furnace';
 import RoaringRide from './raw-data/roaring-ride';
 import SeveredInnocence from './raw-data/severed-innocence';
 import SharpenedStinger from './raw-data/sharpened-stinger';
@@ -117,6 +118,7 @@ const wEngineList: WEngine[] = [
     ReverbMarkII,
     ReverbMarkIII,
     RiotSuppressorMarkVI,
+    RoaringFurnace,
     RoaringRide,
     SeveredInnocence,
     SharpenedStinger,

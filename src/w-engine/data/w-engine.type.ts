@@ -48,6 +48,7 @@ export enum WEngineId {
     ReverbMarkII = 'reverb-mark-ii',
     ReverbMarkIII = 'reverb-mark-iii',
     RiotSuppressorMarkVI = 'riot-suppressor-mark-vi',
+    RoaringFurnace = 'roaring-furnace',
     RoaringRide = 'roaring-ride',
     SeveredInnocence = 'severed-innocence',
     SharpenedStinger = 'sharpened-stinger',

@@ -18,6 +18,7 @@ import GraceHoward from './raw-data/grace-howard';
 import HoshimiMiyabi from './raw-data/hoshimi-miyabi';
 import HugoVlad from './raw-data/hugo-vlad';
 import JaneDoe from './raw-data/jane-doe';
+import JuFufu from './raw-data/ju-fufu';
 import KoledaBelobog from './raw-data/koleda-belobog';
 import Lighter from './raw-data/lighter';
 import LucianaDeMontefio from './raw-data/luciana-de-montefio';
@@ -55,6 +56,7 @@ const agentList: Agent[] = [
     HoshimiMiyabi,
     HugoVlad,
     JaneDoe,
+    JuFufu,
     KoledaBelobog,
     Lighter,
     LucianaDeMontefio,

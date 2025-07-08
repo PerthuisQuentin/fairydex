@@ -22,7 +22,7 @@ export enum AgentId {
     HoshimiMiyabi = 'hoshimi-miyabi',
     HugoVlad = 'hugo-vlad',
     JaneDoe = 'jane-doe',
-    JuFuFu = 'ju-fufu',
+    JuFufu = 'ju-fufu',
     KoledaBelobog = 'koleda-belobog',
     Lighter = 'lighter',
     LucianaDeMontefio = 'luciana-de-montefio',
