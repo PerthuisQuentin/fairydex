@@ -8,7 +8,7 @@ type WEngineProps = {
     readonly wEngineId: WEngineId
 };
 
-export default async function WEngine({ wEngineId }: WEngineProps) {
+export default function WEngine({ wEngineId }: WEngineProps) {
     const wEngine = wEngines.getById(wEngineId)!;
 
     return (

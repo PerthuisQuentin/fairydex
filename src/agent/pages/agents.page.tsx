@@ -1,17 +1,63 @@
-import AgentCard from '@/agent/components/agent-card.component';
-import { agents } from '@/agent/data/agents.data';
+'use client';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
+
+import AgentList from '@/agent/components/agent-list.component';
+import { TextButton } from '@/common/components/ui/text-button.component';
+
+import AgentsByRole from '../components/agents-by-role.component';
+
+const VIEW_MODE_QUEY_PARAM = 'viewMode';
+enum ViewMode {
+    List = 'list',
+    Role = 'role',
+}
 
 export default function Agents() {
+    const router = useRouter();
+    const searchParams = useSearchParams();
+    const getInitialViewMode = (): ViewMode => {
+        const mode = searchParams?.get(VIEW_MODE_QUEY_PARAM);
+        if (mode === ViewMode.Role) return ViewMode.Role;
+        return ViewMode.List;
+    };
+    const [viewMode, setViewMode] = useState<ViewMode>(getInitialViewMode());
+
+    useEffect(() => {
+        const params = new URLSearchParams(Array.from(searchParams?.entries() || []));
+        params.set(VIEW_MODE_QUEY_PARAM, viewMode);
+        router.replace(`?${params.toString()}`);
+    }, [viewMode, router, searchParams]);
+
     return (
-        <div className="w-full flex justify-center">
-            <div className="w-full max-w-6xl px-4">
-                <div className="grid justify-center [grid-template-columns:repeat(auto-fit,minmax(180px,max-content))]">
-                    {agents.getAll().map((agent) => (
-                        <div className="flex justify-center items-center" key={agent.id}>
-                            <AgentCard agent={agent} />
-                        </div>
-                    ))}
-                </div>
+        <div className="w-full flex flex-col justify-center">
+            <div className="flex flex-row gap-4 my-2 justify-center">
+                <TextButton
+                    className="w-50 italic"
+                    selected={viewMode === ViewMode.List}
+                    onClick={() => setViewMode(ViewMode.List)}
+                >
+                    List
+                </TextButton>
+                <TextButton
+                    className="w-50 italic"
+                    selected={viewMode === ViewMode.Role}
+                    onClick={() => setViewMode(ViewMode.Role)}
+                >
+                    By Role
+                </TextButton>
+            </div>
+            <div className='my-4 w-full flex justify-center'>
+                {viewMode === ViewMode.List && (
+                    <div className='w-full max-w-6xl'>
+                        <AgentList />
+                    </div>
+                )}
+                {viewMode === ViewMode.Role && (
+                    <div className='w-full mx-8'>
+                        <AgentsByRole />
+                    </div>
+                )}
             </div>
         </div>
     );

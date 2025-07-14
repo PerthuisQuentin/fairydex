@@ -7,7 +7,7 @@ type ItemRankIconProps = {
     readonly rank: Rank;
 };
 
-export default async function ItemRankIcon({ rank }: ItemRankIconProps) {
+export default function ItemRankIcon({ rank }: ItemRankIconProps) {
     return (
         <Image
             src={getItemRankIconUrl(rank)}

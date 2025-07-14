@@ -7,7 +7,7 @@ type BangbooRankIconProps = {
     readonly rank: Rank;
 };
 
-export default async function BangbooRankIcon({ rank }: BangbooRankIconProps) {
+export default function BangbooRankIcon({ rank }: BangbooRankIconProps) {
     return (
         <Image
             src={getBangbooRankIconUrl(rank)}

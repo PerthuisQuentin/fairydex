@@ -7,7 +7,7 @@ type AgentSplashArtProps = {
     readonly agentId: AgentId;
 };
 
-export default async function AgentSplashArt({ agentId }: AgentSplashArtProps) {
+export default function AgentSplashArt({ agentId }: AgentSplashArtProps) {
     return (
         <Image
             src={getAgentSplashArtUrl(agentId)}

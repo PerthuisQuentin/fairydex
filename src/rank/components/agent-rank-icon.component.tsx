@@ -7,7 +7,7 @@ type AgentRankIconProps = {
     readonly rank: Rank;
 };
 
-export default async function AgentRankIcon({ rank }: AgentRankIconProps) {
+export default function AgentRankIcon({ rank }: AgentRankIconProps) {
     return (
         <Image
             src={getAgentRankIconUrl(rank)}

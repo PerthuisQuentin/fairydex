@@ -8,8 +8,8 @@ import DottedCard from '@/common/components/ui/dotted-card.component';
 import SpecialityIcon from '@/speciality/components/speciality-icon.component';
 import { SpecialityId } from '@/speciality/data/speciality.type';
 
-import AgentIcon from '../components/agent-icon.component';
 import { agents } from '../data/agents.data';
+import AgentIcon from './agent-icon.component';
 
 const attributeIds = [
     AttributeId.Physical,
@@ -28,31 +28,25 @@ const specialityIds = [
     SpecialityId.Defense,
 ];
 
-export default function AgentStats() {
+export default function AgentsByRole() {
     const renderAttributeHeaders = () => (
         attributeIds.map((attributeId) => (
-            <th key={`col-header-${attributeId}`}>
-                <DottedCard containerClass='m-0' contentClass='flex items-center justify-center'>
-                    <div className="flex items-center justify-center w-10 h-10 relative">
-                        <AttributeIcon attributeId={attributeId} />
-                    </div>
-                </DottedCard>
-            </th>
+            <DottedCard key={`header-${attributeId}`} containerClass='w-full h-16' contentClass='flex items-center justify-center'>
+                <div className="flex items-center justify-center w-10 h-10 relative">
+                    <AttributeIcon attributeId={attributeId} />
+                </div>
+            </DottedCard>
         ))
     );
 
-    const renderSpecialityHeader = (specialityId: SpecialityId) => (
-        <th
-            key={`row-header-${specialityId}`}
-            scope="row"
-        >
-            <DottedCard containerClass='m-0' contentClass='min-h-30 flex items-center justify-center '>
-                <div className="flex items-center justify-center w-10 h-10 relative">
-                    <SpecialityIcon specialityId={specialityId} />
-                </div>
-            </DottedCard>
-        </th>
-    );
+    const renderRow = (specialityId: SpecialityId) => [
+        <DottedCard key={`header-${specialityId}`} containerClass='w-16 h-full' contentClass='flex items-center justify-center'>
+            <div className="flex items-center justify-center w-10 h-10 relative">
+                <SpecialityIcon specialityId={specialityId} />
+            </div>
+        </DottedCard>,
+        ...attributeIds.map((attributeId) => renderCell(specialityId, attributeId)),
+    ];
 
     const renderCell = (specialityId: SpecialityId, attributeId: AttributeId) => {
         const filteredAgents = agents.getAll({
@@ -61,15 +55,15 @@ export default function AgentStats() {
         });
 
         return (
-            <td key={`cell-${specialityId}-${attributeId}`}>
-                <DottedCard containerClass='m-0' contentClass='min-h-30 flex gap-2 items-center justify-center'>
+            <DottedCard key={`cell-${specialityId}-${attributeId}`} contentClass='p-2 flex items-center justify-center'>
+                <div className='flex flex-wrap justify-center items-center'>
                     {filteredAgents.map((agent) => (
                         <Link
                             key={agent.id}
                             href={`/agents/${agent.id}`}
                         >
                             <div className={classNames(
-                                'w-20 min-w-20 p-1 bg-z-gray-2 aspect-square rounded',
+                                'w-20 m-2 p-1 bg-z-gray-2 aspect-square rounded',
                                 'transition-all duration-200 ease-out hover:bg-green-500 cursor-pointer'
                             )}>
                                 <div className='w-full h-full bg-z-black rounded relative'>
@@ -78,31 +72,16 @@ export default function AgentStats() {
                             </div>
                         </Link>
                     ))}
-                </DottedCard>
-            </td>
+                </div>
+            </DottedCard>
         );
     };
 
     return (
-        <div className="p-8">
-            <table className='min-w-full rounded-lg overflow-hidden table-auto'>
-                <thead>
-                    <tr>
-                        <th></th>
-                        {renderAttributeHeaders()}
-                    </tr>
-                </thead>
-                <tbody>
-                    {specialityIds.map((specialityId) => (
-                        <tr key={`row-${specialityId}`}>
-                            {renderSpecialityHeader(specialityId)}
-                            {attributeIds.map((attributeId) => (
-                                renderCell(specialityId, attributeId)
-                            ))}
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+        <div className="grid grid-cols-[64px_repeat(5,1fr)] gap-4 items-stretch">
+            <div></div>
+            {renderAttributeHeaders()}
+            {specialityIds.map((specialityId) => renderRow(specialityId))}
         </div>
     );
 }

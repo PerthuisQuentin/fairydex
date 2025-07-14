@@ -7,7 +7,7 @@ type WEngineIconProps = {
     readonly wEngineId: WEngineId;
 };
 
-export default async function WEngineIcon({ wEngineId }: WEngineIconProps) {
+export default function WEngineIcon({ wEngineId }: WEngineIconProps) {
     return (
         <Image
             src={getWEngineIconUrl(wEngineId)}

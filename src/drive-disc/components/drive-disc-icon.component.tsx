@@ -7,7 +7,7 @@ type DriveDiscIconProps = {
     readonly driveDiscId: DriveDiscId;
 };
 
-export default async function DriveDiscIcon({ driveDiscId }: DriveDiscIconProps) {
+export default function DriveDiscIcon({ driveDiscId }: DriveDiscIconProps) {
     return (
         <Image
             src={getDriveDiscIconUrl(driveDiscId)}

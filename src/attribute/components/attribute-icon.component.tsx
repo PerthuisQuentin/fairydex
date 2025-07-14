@@ -7,7 +7,7 @@ type AttributeIconProps = {
     readonly attributeId: AttributeId;
 };
 
-export default async function AttributeIcon({ attributeId }: AttributeIconProps) {
+export default function AttributeIcon({ attributeId }: AttributeIconProps) {
     return (
         <Image
             fill={true}

@@ -7,7 +7,7 @@ type BangbooProps = {
     readonly bangbooId: BangbooId
 };
 
-export default async function Bangboo({ bangbooId }: BangbooProps) {
+export default function Bangboo({ bangbooId }: BangbooProps) {
     const bangboo = bangboos.getById(bangbooId)!;
 
     return (

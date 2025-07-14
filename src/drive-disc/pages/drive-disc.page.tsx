@@ -6,7 +6,7 @@ type DriveDiscProps = {
     readonly driveDiscId: DriveDiscId
 };
 
-export default async function DriveDisc({ driveDiscId }: DriveDiscProps) {
+export default function DriveDisc({ driveDiscId }: DriveDiscProps) {
     const driveDisc = driveDiscs.getById(driveDiscId)!;
 
     return (

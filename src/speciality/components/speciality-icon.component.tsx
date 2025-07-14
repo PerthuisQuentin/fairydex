@@ -7,7 +7,7 @@ type SpecialityIconProps = {
     readonly specialityId: SpecialityId;
 };
 
-export default async function SpecialityIcon({ specialityId }: SpecialityIconProps) {
+export default function SpecialityIcon({ specialityId }: SpecialityIconProps) {
     return (
         <Image
             src={getSpecialityIconUrl(specialityId)}

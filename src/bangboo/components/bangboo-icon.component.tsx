@@ -7,7 +7,7 @@ type BangbooIconProps = {
     readonly bangbooId: BangbooId;
 };
 
-export default async function BangbooIcon({ bangbooId }: BangbooIconProps) {
+export default function BangbooIcon({ bangbooId }: BangbooIconProps) {
     return (
         <Image
             src={getBangbooIconUrl(bangbooId)}

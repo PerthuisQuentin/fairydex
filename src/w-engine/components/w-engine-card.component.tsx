@@ -16,7 +16,7 @@ export default function WEngineCard({ wEngine }: WEngineCardProps) {
             key={wEngine.id}
             href={`/w-engines/${wEngine.id}`}
         >
-            <DottedCard selectable={true} containerClass='w-42'>
+            <DottedCard selectable={true} containerClass='w-42 m-2'>
                 <div className='w-full aspect-square rounded relative'>
                     <WEngineIcon wEngineId={wEngine.id} />
                 </div>

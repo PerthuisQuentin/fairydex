@@ -15,7 +15,7 @@ export default function BangbooCard({ bangboo }: BangbooCardProps) {
             key={bangboo.id}
             href={`/bangboos/${bangboo.id}`}
         >
-            <DottedCard selectable={true} containerClass='w-42'>
+            <DottedCard selectable={true} containerClass='w-42 m-2'>
                 <div className='w-full aspect-square rounded relative'>
                     <BangbooIcon bangbooId={bangboo.id} />
                 </div>

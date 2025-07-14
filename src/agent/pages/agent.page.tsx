@@ -10,7 +10,7 @@ type AgentProps = {
     readonly agentId: AgentId
 };
 
-export default async function Agent({ agentId }: AgentProps) {
+export default function Agent({ agentId }: AgentProps) {
     const agent = agents.getById(agentId)!;
 
     return (

@@ -7,7 +7,7 @@ type AgentIconProps = {
     readonly agentId: AgentId;
 };
 
-export default async function AgentIcon({ agentId }: AgentIconProps) {
+export default function AgentIcon({ agentId }: AgentIconProps) {
     return (
         <Image
             src={getAgentIconUrl(agentId)}
