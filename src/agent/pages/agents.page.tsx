@@ -1,6 +1,7 @@
 'use client';
+
 import { useRouter, useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 
 import AgentList from '@/agent/components/agent-list.component';
 import { TextButton } from '@/common/components/ui/text-button.component';
@@ -14,6 +15,14 @@ enum ViewMode {
 }
 
 export default function Agents() {
+    return (
+        <Suspense fallback={null}>
+            <AgentsContent />
+        </Suspense>
+    );
+}
+
+const AgentsContent = () => {
     const router = useRouter();
     const searchParams = useSearchParams();
     const getInitialViewMode = (): ViewMode => {
@@ -61,4 +70,4 @@ export default function Agents() {
             </div>
         </div>
     );
-}
+};
