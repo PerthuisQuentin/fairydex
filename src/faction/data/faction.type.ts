@@ -7,6 +7,7 @@ export enum FactionId {
     ObolSquad = 'obol-squad',
     Section6 = 'section-6',
     SonsOfCalydon = 'sons-of-calydon',
+    SpookShack = 'spook-shack',
     StarsOfLyra = 'stars-of-lyra',
     VictoriaHousekeeping = 'victoria-housekeeping',
     YunkuiSummit = 'yunkui-summit',

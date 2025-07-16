@@ -35,6 +35,7 @@ export enum WEngineId {
     MagneticStormBravo = 'magnetic-storm-bravo',
     MagneticStormCharlie = 'magnetic-storm-charlie',
     MarcatoDesire = 'marcato-desire',
+    Metanukimorphosis = 'metanukimorphosis',
     MyriadEclipse = 'myriad-eclipse',
     OriginalTransmorpher = 'original-transmorpher',
     PeacekeeperSpecialized = 'peacekeeper-specialized',

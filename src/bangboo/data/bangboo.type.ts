@@ -21,6 +21,7 @@ export enum BangbooId {
     Knightboo = 'knightboo',
     Luckyboo = 'luckyboo',
     Magnetiboo = 'magnetiboo',
+    MissEsme = 'miss-esme',
     OfficerCui = 'officer-cui',
     Overtimeboo = 'overtimeboo',
     Paperboo = 'paperboo',

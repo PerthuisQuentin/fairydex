@@ -10,6 +10,7 @@ export enum VersionId {
     Version_1_6 = '1.6',
     Version_1_7 = '1.7',
     Version_2_0 = '2.0',
+    Version_2_1 = '2.1',
 }
 
 export type ChannelAgent = {

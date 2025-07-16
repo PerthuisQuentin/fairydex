@@ -33,6 +33,7 @@ import MagneticStormAlpha from './raw-data/magnetic-storm-alpha';
 import MagneticStormBravo from './raw-data/magnetic-storm-bravo';
 import MagneticStormCharlie from './raw-data/magnetic-storm-charlie';
 import MarcatoDesire from './raw-data/marcato-desire';
+import Metanukimorphosis from './raw-data/metanukimorphosis';
 import MyriadEclipse from './raw-data/myriad-eclipse';
 import OriginalTransmorpher from './raw-data/original-transmorpher';
 import PeacekeeperSpecialized from './raw-data/peacekeeper-specialized';
@@ -106,6 +107,7 @@ const wEngineList: WEngine[] = [
     MagneticStormCharlie,
     MarcatoDesire,
     MyriadEclipse,
+    Metanukimorphosis,
     OriginalTransmorpher,
     PeacekeeperSpecialized,
     PreciousFossilizedCore,

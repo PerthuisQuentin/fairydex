@@ -11,6 +11,7 @@ import Mockingbird from './raw-data/mockingbird';
 import ObolSquad from './raw-data/obol-squad';
 import Section6 from './raw-data/section-6';
 import SonsOfCalydon from './raw-data/sons-of-calydon';
+import SpookShack from './raw-data/spook-shack';
 import StarsOfLyra from './raw-data/stars-of-lyra';
 import VictoriaHousekeeping from './raw-data/victoria-housekeeping';
 import YunkuiSummit from './raw-data/yunkui-summit';
@@ -24,6 +25,7 @@ const factionList: Faction[] = [
     ObolSquad,
     Section6,
     SonsOfCalydon,
+    SpookShack,
     StarsOfLyra,
     VictoriaHousekeeping,
     YunkuiSummit,

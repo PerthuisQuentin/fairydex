@@ -34,6 +34,7 @@ import Soldier11 from './raw-data/soldier-11';
 import Soukaku from './raw-data/soukaku';
 import Trigger from './raw-data/trigger';
 import TsukishiroYanagi from './raw-data/tsukishiro-yanagi';
+import UkinameYuzuha from './raw-data/ukinami-yuzuha';
 import VivianBanshee from './raw-data/vivian-banshee';
 import VonLycaon from './raw-data/von-lycaon';
 import Yixuan from './raw-data/yi-xuan';
@@ -72,6 +73,7 @@ const agentList: Agent[] = [
     Soukaku,
     Trigger,
     TsukishiroYanagi,
+    UkinameYuzuha,
     VivianBanshee,
     VonLycaon,
     Yixuan,

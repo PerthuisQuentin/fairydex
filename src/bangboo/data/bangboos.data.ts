@@ -20,6 +20,7 @@ import Exploreboo from './raw-data/exploreboo';
 import Knightboo from './raw-data/knightboo';
 import Luckyboo from './raw-data/luckyboo';
 import Magnetiboo from './raw-data/magnetiboo';
+import MissEsme from './raw-data/miss-esme';
 import OfficerCui from './raw-data/officer-cui';
 import Overtimeboo from './raw-data/overtimeboo';
 import Paperboo from './raw-data/paperboo';
@@ -53,6 +54,7 @@ const bangbooList: Bangboo[] = [
     Knightboo,
     Luckyboo,
     Magnetiboo,
+    MissEsme,
     OfficerCui,
     Overtimeboo,
     Paperboo,

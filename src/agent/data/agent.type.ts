@@ -38,6 +38,7 @@ export enum AgentId {
     Soukaku = 'soukaku',
     Trigger = 'trigger',
     TsukishiroYanagi = 'tsukishiro-yanagi',
+    UkinamiYuzuha = 'ukinami-yuzuha',
     VivianBanshee = 'vivian-banshee',
     VonLycaon = 'von-lycaon',
     YiXuan = 'yi-xuan',
