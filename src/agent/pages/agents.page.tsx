@@ -40,7 +40,7 @@ const AgentsContent = () => {
 
     return (
         <div className="w-full flex flex-col justify-center">
-            <div className="flex flex-row gap-4 my-2 justify-center">
+            <div className="px-2 my-2 flex flex-row flex-wrap gap-4 justify-center">
                 <TextButton
                     className="w-50 italic"
                     selected={viewMode === ViewMode.List}

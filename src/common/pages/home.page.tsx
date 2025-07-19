@@ -27,8 +27,15 @@ function HomeCard({ icon, label, href }: { readonly icon: React.ReactNode; reado
 
 export default function Home() {
     return (
-        <main className="flex items-center justify-center min-h-[60vh]">
-            <div className="relative w-full flex items-center justify-center">
+        <main className="flex items-center flex-col justify-center min-h-[60vh]">
+            <div className='mb-8 px-4 flex'>
+                <div className='bg-z-black p-4 rounded-lg border-4 border-z-gray-2'>
+                    <h1 className="text-3xl font-bold text-center">Hey Proxy, welcome to Zenless Lab</h1>
+                    <p className="text-lg text-center mt-2">This site is still in its early stages, but I hope you find it useful</p>
+                    <p className="text-lg text-center mt-2">More features are on the way… maybe :)</p>
+                </div>
+            </div>
+            <div className="relative w-full flex flex-wrap items-center justify-center">
                 <HomeCard icon={<AgentIcon agentId={AgentId.AnbyDemara} />} label="Agents" href="/agents" />
                 <HomeCard icon={<WEngineIcon wEngineId={WEngineId.DemaraBatteryMarkII} />} label="W-Engines" href="/w-engines" />
                 <HomeCard icon={<DriveDiscIcon driveDiscId={DriveDiscId.WoodpeckerElectro} />} label="Drive Discs" href="/drive-discs" />

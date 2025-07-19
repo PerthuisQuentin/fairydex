@@ -12,8 +12,8 @@ const belanosimaFont = Belanosima({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.BASE_URL!),
-  title: 'NameToFind',
-  description: 'ZZZ tools',
+  title: 'Zenless Lab',
+  description: 'Information and tools for Zenless Zone Zero',
 };
 
 export default function RootLayout({
