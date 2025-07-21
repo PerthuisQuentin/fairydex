@@ -10,11 +10,15 @@ type DriveDiscPageProps = {
 
 export async function generateMetadata({ params }: DriveDiscPageProps): Promise<Metadata> {
     const { driveDiscId } = await params;
+    
     const driveDisc = driveDiscs.getById(driveDiscId)!;
 
+    const title = driveDisc.name;
+
     return {
+        title,
         openGraph: {
-            title: driveDisc.name,
+            title,
             url: `/bangboos/${driveDiscId}`,
             images: [
                 {

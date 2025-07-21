@@ -10,11 +10,18 @@ type BangbooPageProps = {
 
 export async function generateMetadata({ params }: BangbooPageProps): Promise<Metadata> {
     const { bangbooId } = await params;
+
     const bangboo = bangboos.getById(bangbooId)!;
 
+    const title = bangboo.name;
+    const description = `${bangboo.rank} - ${bangboo?.name}`;
+
     return {
+        title,
+        description,
         openGraph: {
-            title: bangboo.name,
+            title,
+            description,
             url: `/bangboos/${bangbooId}`,
             images: [
                 {

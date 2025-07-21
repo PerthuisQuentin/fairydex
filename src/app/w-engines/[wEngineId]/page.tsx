@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 
+import { specialities } from '@/speciality/data/specialities.data';
 import { WEngineId } from '@/w-engine/data/w-engine.type';
 import { getWEngineIconUrl, wEngines } from '@/w-engine/data/w-engines.data';
 import WEngine from '@/w-engine/pages/w-engine.page';
@@ -10,11 +11,19 @@ type WEnginePageProps = {
 
 export async function generateMetadata({ params }: WEnginePageProps): Promise<Metadata> {
     const { wEngineId } = await params;
+
     const wEngine = wEngines.getById(wEngineId)!;
+    const speciality = specialities.getById(wEngine.specialityId);
+
+    const title = wEngine.name;
+    const description = `${wEngine.rank} - ${wEngine.name} - ${speciality?.name}`;
 
     return {
+        title,
+        description,
         openGraph: {
-            title: wEngine.name,
+            title,
+            description,
             url: `/w-engines/${wEngineId}`,
             images: [
                 {
