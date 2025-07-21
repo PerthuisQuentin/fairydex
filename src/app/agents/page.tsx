@@ -1,7 +1,5 @@
 import { Metadata } from 'next';
 
-import { AgentId } from '@/agent/data/agent.type';
-import { getAgentIconUrl } from '@/agent/data/agents.data';
 import Agents from '@/agent/pages/agents.page';
 
 const title = 'Zenless Lab - Agent list';
@@ -12,14 +10,7 @@ export const metadata: Metadata = {
     description,
     openGraph: {
         title,
-        description,
-        images: [
-            {
-                url: getAgentIconUrl(AgentId.AnbyDemara),
-                width: 128,
-                height: 128,
-            },
-        ],
+        description
     }
 };
 

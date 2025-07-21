@@ -3,8 +3,6 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Belanosima } from 'next/font/google';
 
-import { AgentId } from '@/agent/data/agent.type';
-import { getAgentIconUrl } from '@/agent/data/agents.data';
 import Header from '@/common/components/header.component';
 
 const belanosimaFont = Belanosima({
@@ -19,13 +17,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Zenless Lab',
     url: '/',
-    images: [
-      {
-        url: getAgentIconUrl(AgentId.AnbyDemara),
-        width: 128,
-        height: 128,
-      },
-    ],
   }
 };
 
