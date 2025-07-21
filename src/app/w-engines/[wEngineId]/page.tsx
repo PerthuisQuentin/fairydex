@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: WEnginePageProps): Promise<Me
     const speciality = specialities.getById(wEngine.specialityId);
 
     const title = wEngine.name;
-    const description = `${wEngine.rank} - ${wEngine.name} - ${speciality?.name}`;
+    const description = `${wEngine.rank} - ${speciality?.name}`;
 
     return {
         title,

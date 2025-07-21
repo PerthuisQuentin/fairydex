@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import { BangbooId } from '@/bangboo/data/bangboo.type';
 import { bangboos, getBangbooIconUrl } from '@/bangboo/data/bangboos.data';
 import Bangboo from '@/bangboo/pages/bangboo.page';
+import { factions } from '@/faction/data/factions.data';
 
 type BangbooPageProps = {
     params: Promise<{ bangbooId: BangbooId }>
@@ -14,7 +15,12 @@ export async function generateMetadata({ params }: BangbooPageProps): Promise<Me
     const bangboo = bangboos.getById(bangbooId)!;
 
     const title = bangboo.name;
-    const description = `${bangboo.rank} - ${bangboo?.name}`;
+    let description = `${bangboo.rank}`;
+
+    if (bangboo.factionId) {
+        const faction = factions.getById(bangboo.factionId);
+        description += ` - ${faction?.name}`;
+    }
 
     return {
         title,
