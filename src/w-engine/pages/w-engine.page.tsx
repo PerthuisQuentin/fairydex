@@ -1,3 +1,4 @@
+import DottedCard from '@/common/components/ui/dotted-card.component';
 import ItemRankIcon from '@/rank/components/item-rank-icon.component';
 import SpecialityIcon from '@/speciality/components/speciality-icon.component';
 import WEngineIcon from '@/w-engine/components/w-engine-icon.component';
@@ -12,19 +13,23 @@ export default function WEngine({ wEngineId }: WEngineProps) {
     const wEngine = wEngines.getById(wEngineId)!;
 
     return (
-        <div className="mx-auto max-w-4xl mt-8 flex flex-col items-center">
-            <h1 className="text-3xl font-bold mb-2">{wEngine.name}</h1>
-            <div className="flex flex-row gap-2 items-center text-base mb-4">
-                <div className='h-8 w-8 relative'>
-                    <ItemRankIcon rank={wEngine.rank} />
+        <div className="mx-auto max-w-4xl flex flex-col items-center mt-2 px-8">
+            <DottedCard containerClass='w-full sm:w-[500px] md:w-[700px]' contentClass='flex flex-col items-center'>
+                <h1 className="text-3xl font-bold mb-2">{wEngine.name}</h1>
+              <div className='mb-2 w-[128px] h-10 bg-z-gray border-2 border-z-gray-2 rounded flex flex-row justify-around items-center'>
+                    <div className="h-full w-10 bg-z-gray border-2 border-z-gray-2 rounded flex justify-center scale-125">
+                        <div className='h-full aspect-square flex justify-center relative'>
+                            <ItemRankIcon rank={wEngine.rank} />
+                        </div>
+                    </div>
+                    <div className="h-full aspect-square flex justify-center relative">
+                        <SpecialityIcon specialityId={wEngine.specialityId} />
+                    </div>
                 </div>
-                <div className='h-8 w-8 relative'>
-                    <SpecialityIcon specialityId={wEngine.specialityId} />
+                <div className='w-64 h-64 relative'>
+                    <WEngineIcon wEngineId={wEngine.id} />
                 </div>
-            </div>
-            <div className='h-24 w-24 relative'>
-                <WEngineIcon wEngineId={wEngine.id} />
-            </div>
+            </DottedCard>
         </div>
     );
 }
