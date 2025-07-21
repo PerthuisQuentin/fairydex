@@ -12,10 +12,10 @@ const belanosimaFont = Belanosima({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.BASE_URL!),
-  title: 'Zenless Lab',
+  title: 'FairyDex',
   description: 'Information and tools for Zenless Zone Zero',
   openGraph: {
-    title: 'Zenless Lab',
+    title: 'FairyDex',
     url: '/',
   }
 };

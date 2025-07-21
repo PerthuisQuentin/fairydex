@@ -30,7 +30,7 @@ export default function Home() {
         <main className="flex items-center flex-col justify-center min-h-[60vh]">
             <div className='mb-8 px-4 flex'>
                 <div className='bg-z-black p-4 rounded-lg border-4 border-z-gray-2'>
-                    <h1 className="text-3xl font-bold text-center">Hey Proxy, welcome to Zenless Lab</h1>
+                    <h1 className="text-3xl font-bold text-center">Hey Proxy, welcome to FairyDex</h1>
                     <p className="text-lg text-center mt-2">This site is still in its early stages, but I hope you find it useful</p>
                     <p className="text-lg text-center mt-2">More features are on the way… maybe :)</p>
                 </div>

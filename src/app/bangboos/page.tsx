@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 import Bangboos from '@/bangboo/pages/bangboos.page';
 
-const title = 'Zenless Lab - Bangboo list';
+const title = 'FairyDex - Bangboo list';
 const description = 'Browse all bangboos in Zenless Zone Zero';
 
 export const metadata: Metadata = {

@@ -7,7 +7,7 @@ export default function Header() {
             <div className="max-w-7xl mx-auto flex items-center justify-between">
                 <Link href="/" className="flex items-center text-2xl hover:text-white transitio">
                     <Image src="/fairy.png" alt="Fairy eye" width={32} height={32} className="w-8 h-8 mr-3" priority />
-                    Zenless Lab
+                    FairyDex
                 </Link>
                 <nav className="hidden md:flex space-x-8 text-lg font-medium text-gray-300">
                     <Link href="/agents" className="hover:text-white transition">Agents</Link>
