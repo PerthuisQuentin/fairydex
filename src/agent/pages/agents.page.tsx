@@ -40,6 +40,7 @@ const AgentsContent = () => {
 
     return (
         <div className="w-full flex flex-col justify-center">
+            <h1 className="text-3xl font-bold text-center my-4">Agents</h1>
             <div className="px-2 my-2 flex flex-row flex-wrap gap-4 justify-center">
                 <TextButton
                     className="w-50 italic"
