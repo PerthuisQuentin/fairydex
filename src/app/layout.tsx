@@ -1,5 +1,6 @@
 import './globals.css';
 
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
 import { Belanosima } from 'next/font/google';
 
@@ -33,6 +34,7 @@ export default function RootLayout({
         <Header />
         <div className="pt-20">
           {children}
+          <SpeedInsights />
         </div>
       </body>
     </html>
