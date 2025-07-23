@@ -24,7 +24,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
             '/agents',
             '/bangboos',
             '/drive-discs',
-            '/w-engines'
+            '/w-engines',
+            '/about'
         ], 0.5),
         // Agents
         ...generatePages(
