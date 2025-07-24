@@ -5,14 +5,18 @@ import { Rank } from '@/rank/data/rank.type';
 
 type BangbooRankIconProps = {
     readonly rank: Rank;
+    readonly className?: string;
 };
 
-export default function BangbooRankIcon({ rank }: BangbooRankIconProps) {
+export default function BangbooRankIcon({ rank, className }: BangbooRankIconProps) {
     return (
         <Image
             src={getBangbooRankIconUrl(rank)}
-            fill={true}
-            alt={`Bangboo rank icon for ${rank}`}
+            width={32}
+            height={32}
+            alt={`${rank} rank bangboo icon`}
+            className={className}
+            unoptimized={true}
         />
     );
 }

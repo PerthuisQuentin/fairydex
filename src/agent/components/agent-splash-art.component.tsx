@@ -11,9 +11,11 @@ export default function AgentSplashArt({ agentId }: AgentSplashArtProps) {
     return (
         <Image
             src={getAgentSplashArtUrl(agentId)}
-            height={500}
-            width={500}
-            alt={`Splash art of ${agentId}`}
+            width={1200}
+            height={1200}
+            alt={`${agentId} splash art`}
+            priority={true}
+            unoptimized
         />
     );
 }

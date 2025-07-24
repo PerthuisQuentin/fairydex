@@ -14,8 +14,8 @@ function HomeCard({ icon, label, href }: { readonly icon: React.ReactNode; reado
     return (
         <Link href={href} className="contents">
             <DottedCard selectable={true} containerClass='m-2'>
-                <div className="flex flex-col items-center">
-                    <div className="relative w-32 h-32">
+                <div className="flex flex-col items-center justify-center">
+                    <div className="relative w-32 h-36 flex flex-col items-center justify-center">
                         {icon}
                     </div>
                     <span className="mt-2 text-2xl">{label}</span>

@@ -5,14 +5,18 @@ import { getFactionIconUrl } from '@/faction/data/factions.data';
 
 type FactionIconProps = {
     readonly factionId: FactionId;
+    readonly className?: string;
 };
 
-export default function FactionIcon({ factionId }: FactionIconProps) {
+export default function FactionIcon({ factionId, className }: FactionIconProps) {
     return (
         <Image
             src={getFactionIconUrl(factionId)}
-            fill={true}
-            alt={`Faction icon for ${factionId}`}
+            width={32}
+            height={32}
+            alt={`${factionId} faction icon`}
+            className={className}
+            unoptimized={true}
         />
     );
 }

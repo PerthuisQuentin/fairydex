@@ -17,14 +17,10 @@ export default function Bangboo({ bangbooId }: BangbooProps) {
                 <h1 className="text-3xl font-bold mb-2">{bangboo.name}</h1>
                 <div className='mb-2 w-[128px] h-10 bg-z-gray border-2 border-z-gray-2 rounded flex flex-row justify-around items-center'>
                     <div className="h-full w-10 bg-z-gray border-2 border-z-gray-2 rounded flex justify-center scale-125">
-                        <div className='h-full aspect-square flex justify-center relative'>
-                            <BangbooRankIcon rank={bangboo.rank} />
-                        </div>
+                        <BangbooRankIcon rank={bangboo.rank} />
                     </div>
                 </div>
-                <div className='w-64 h-64 relative'>
-                    <BangbooIcon bangbooId={bangboo.id} />
-                </div>
+                <BangbooIcon bangbooId={bangboo.id} className='py-2' />
             </DottedCard>
         </div>
     );

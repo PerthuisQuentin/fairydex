@@ -82,6 +82,6 @@ const agentList: Agent[] = [
 
 export const agents = new Agents(agentList);
 
-export const getAgentSplashArtUrl = (agentId: AgentId): string => `/agent-splash-arts/${agentId}.png`;
+export const getAgentSplashArtUrl = (agentId: AgentId): string => `/agent-splash-arts/w1200/${agentId}.webp`;
 
-export const getAgentIconUrl = (agentId: AgentId): string => `/agent-icons/${agentId}.png`;
+export const getAgentIconUrl = (agentId: AgentId): string => `/agent-icons/w256/${agentId}.webp`;

@@ -16,19 +16,13 @@ export default function WEngine({ wEngineId }: WEngineProps) {
         <div className="mx-auto max-w-4xl flex flex-col items-center mt-2 px-8">
             <DottedCard containerClass='w-full sm:w-[500px] md:w-[700px]' contentClass='flex flex-col items-center'>
                 <h1 className="text-3xl font-bold mb-2">{wEngine.name}</h1>
-              <div className='mb-2 w-[128px] h-10 bg-z-gray border-2 border-z-gray-2 rounded flex flex-row justify-around items-center'>
+                <div className='mb-2 w-[128px] h-10 bg-z-gray border-2 border-z-gray-2 rounded flex flex-row justify-around items-center'>
                     <div className="h-full w-10 bg-z-gray border-2 border-z-gray-2 rounded flex justify-center scale-125">
-                        <div className='h-full aspect-square flex justify-center relative'>
-                            <ItemRankIcon rank={wEngine.rank} />
-                        </div>
+                        <ItemRankIcon rank={wEngine.rank} />
                     </div>
-                    <div className="h-full aspect-square flex justify-center relative">
-                        <SpecialityIcon specialityId={wEngine.specialityId} />
-                    </div>
+                    <SpecialityIcon specialityId={wEngine.specialityId} />
                 </div>
-                <div className='w-64 h-64 relative'>
-                    <WEngineIcon wEngineId={wEngine.id} />
-                </div>
+                <WEngineIcon wEngineId={wEngine.id} className='py-2' />
             </DottedCard>
         </div>
     );

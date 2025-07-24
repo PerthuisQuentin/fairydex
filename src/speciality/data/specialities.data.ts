@@ -21,4 +21,4 @@ const specialityList: Speciality[] = [
 
 export const specialities = new Specialities(specialityList);
 
-export const getSpecialityIconUrl = (specialityId: SpecialityId): string => `/speciality-icons/${specialityId}.webp`;
+export const getSpecialityIconUrl = (specialityId: SpecialityId): string => `/speciality-icons/64x64/${specialityId}.webp`;

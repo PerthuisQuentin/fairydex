@@ -31,19 +31,15 @@ const specialityIds = [
 export default function AgentsByRole() {
     const renderAttributeHeaders = () => (
         attributeIds.map((attributeId) => (
-            <DottedCard key={`header-${attributeId}`} containerClass='w-full h-16' contentClass='flex items-center justify-center'>
-                <div className="flex items-center justify-center w-10 h-10 relative">
-                    <AttributeIcon attributeId={attributeId} />
-                </div>
+            <DottedCard key={`header-${attributeId}`} containerClass='w-full' contentClass='flex items-center justify-center'>
+                <AttributeIcon attributeId={attributeId} />
             </DottedCard>
         ))
     );
 
     const renderRow = (specialityId: SpecialityId) => [
-        <DottedCard key={`header-${specialityId}`} containerClass='w-16 h-full' contentClass='flex items-center justify-center'>
-            <div className="flex items-center justify-center w-10 h-10 relative">
-                <SpecialityIcon specialityId={specialityId} />
-            </div>
+        <DottedCard key={`header-${specialityId}`} containerClass='h-full' contentClass='flex items-center justify-center'>
+            <SpecialityIcon specialityId={specialityId} />
         </DottedCard>,
         ...attributeIds.map((attributeId) => renderCell(specialityId, attributeId)),
     ];
@@ -63,10 +59,10 @@ export default function AgentsByRole() {
                             href={`/agents/${agent.id}`}
                         >
                             <div className={classNames(
-                                'w-20 m-2 p-1 bg-z-gray-2 aspect-square rounded',
+                                'w-20 h-auto m-2 p-1 bg-z-gray-2 aspect-square rounded',
                                 'transition-all duration-200 ease-out hover:bg-green-500 cursor-pointer'
                             )}>
-                                <div className='w-full h-full bg-z-black rounded relative'>
+                                <div className='bg-z-black rounded'>
                                     <AgentIcon agentId={agent.id} />
                                 </div>
                             </div>
@@ -78,7 +74,7 @@ export default function AgentsByRole() {
     };
 
     return (
-        <div className="grid grid-cols-[64px_repeat(5,1fr)] gap-4 items-stretch">
+        <div className="grid grid-cols-[64px_repeat(5,1fr)] gap-4 items-stretch overflow-x-auto px-2">
             <div></div>
             {renderAttributeHeaders()}
             {specialityIds.map((specialityId) => renderRow(specialityId))}

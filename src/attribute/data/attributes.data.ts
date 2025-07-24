@@ -22,4 +22,4 @@ const attributeList: Attribute[] = [
 
 export const attributes = new Attributes(attributeList);
 
-export const getAttributeIconUrl = (attributeId: AttributeId): string => `/attribute-icons/${attributeId}.webp`;
+export const getAttributeIconUrl = (attributeId: AttributeId): string => `/attribute-icons/64x64/${attributeId}.webp`;

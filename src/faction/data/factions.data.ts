@@ -33,4 +33,4 @@ const factionList: Faction[] = [
 
 export const factions = new Factions(factionList);
 
-export const getFactionIconUrl = (factionId: FactionId): string => `/faction-icons/${factionId}.webp`;
+export const getFactionIconUrl = (factionId: FactionId): string => `/faction-icons/64x64/${factionId}.webp`;

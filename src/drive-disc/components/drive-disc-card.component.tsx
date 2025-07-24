@@ -15,9 +15,7 @@ export default function DriveDiscCard({ driveDisc }: DriveDiscCardProps) {
             href={`/drive-discs/${driveDisc.id}`}
         >
             <DottedCard selectable={true} containerClass='w-42 m-2'>
-                <div className='w-full aspect-square rounded relative'>
-                    <DriveDiscIcon driveDiscId={driveDisc.id} />
-                </div>
+                <DriveDiscIcon driveDiscId={driveDisc.id} />
             </DottedCard>
         </Link>
     );

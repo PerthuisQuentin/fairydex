@@ -150,4 +150,4 @@ const wEngineList: WEngine[] = [
 
 export const wEngines = new WEngines(wEngineList);
 
-export const getWEngineIconUrl = (wEngineId: WEngineId): string => `/w-engine-icons/${wEngineId}.png`;
+export const getWEngineIconUrl = (wEngineId: WEngineId): string => `/w-engine-icons/256x256/${wEngineId}.webp`;

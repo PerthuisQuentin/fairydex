@@ -72,4 +72,4 @@ const bangbooList: Bangboo[] = [
 
 export const bangboos = new Bangboos(bangbooList);
 
-export const getBangbooIconUrl = (bangbooId: BangbooId): string => `/bangboo-icons/${bangbooId}.png`;
+export const getBangbooIconUrl = (bangbooId: BangbooId): string => `/bangboo-icons/256x256/${bangbooId}.webp`;

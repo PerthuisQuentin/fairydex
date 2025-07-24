@@ -48,4 +48,4 @@ const driveDiscList: DriveDisc[] = [
 
 export const driveDiscs = new DriveDiscs(driveDiscList);
 
-export const getDriveDiscIconUrl = (driveDiscId: DriveDiscId): string => `/drive-disc-icons/${driveDiscId}.png`;
+export const getDriveDiscIconUrl = (driveDiscId: DriveDiscId): string => `/drive-disc-icons/256x256/${driveDiscId}.webp`;

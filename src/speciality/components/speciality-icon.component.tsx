@@ -5,14 +5,18 @@ import { SpecialityId } from '@/speciality/data/speciality.type';
 
 type SpecialityIconProps = {
     readonly specialityId: SpecialityId;
+    readonly className?: string;
 };
 
-export default function SpecialityIcon({ specialityId }: SpecialityIconProps) {
+export default function SpecialityIcon({ specialityId, className }: SpecialityIconProps) {
     return (
         <Image
             src={getSpecialityIconUrl(specialityId)}
-            fill={true}
-            alt={`Speciality icon for ${specialityId}`}
+            width={32}
+            height={32}
+            alt={`${specialityId} speciality icon`}
+            className={className}
+            unoptimized={true}
         />
     );
 }
