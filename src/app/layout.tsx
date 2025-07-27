@@ -38,7 +38,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/web-app-manifest-96x96.png" />
         <meta name="apple-mobile-web-app-title" content="FairyDex"></meta>
       </head>
       <body
