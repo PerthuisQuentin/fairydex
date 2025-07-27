@@ -16,11 +16,17 @@ const belanosimaFont = Belanosima({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.BASE_URL!),
   title: 'FairyDex',
-  description: 'Information and tools for Zenless Zone Zero',
+  description: 'Informations and tools for Zenless Zone Zero',
   openGraph: {
     title: 'FairyDex',
     url: '/',
-  }
+  },
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/web-app-manifest-192x192.png',
+  },
+  manifest: '/manifest.webmanifest',
 };
 
 export default function RootLayout({
