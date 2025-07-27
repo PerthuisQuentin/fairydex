@@ -13,6 +13,11 @@ export default function manifest(): MetadataRoute.Manifest {
             {
                 src: '/web-app-manifest-96x96.png',
                 sizes: '96x96',
+                type: 'image/png'
+            },
+            {
+                src: '/web-app-manifest-96x96.png',
+                sizes: '96x96',
                 type: 'image/png',
                 purpose: 'maskable'
             },
