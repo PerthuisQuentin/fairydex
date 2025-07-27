@@ -39,8 +39,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        {/* Fallback ICO for legacy browsers */}
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <meta name="apple-mobile-web-app-title" content="FairyDex"></meta>
       </head>
       <body
         className={`text-gray-300 antialiased ${belanosimaFont.className}`}
