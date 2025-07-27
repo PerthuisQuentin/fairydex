@@ -4,6 +4,7 @@ import AgentIcon from '@/agent/components/agent-icon.component';
 import { Agent } from '@/agent/models/agent.model';
 import AttributeIcon from '@/attribute/components/attribute-icon.component';
 import DottedCard from '@/common/components/ui/dotted-card.component';
+import IconBar, { IconBarHighlight } from '@/common/components/ui/icon-bar.component';
 import AgentRankIcon from '@/rank/components/agent-rank-icon.component';
 import SpecialityIcon from '@/speciality/components/speciality-icon.component';
 
@@ -19,13 +20,13 @@ export default function AgentCard({ agent }: AgentCardProps) {
         >
             <DottedCard selectable={true} containerClass='m-2' contentClass='flex flex-col items-center'>
                 <AgentIcon agentId={agent.id} className='w-36 h-auto' />
-                <div className='mt-2 w-full h-10 bg-z-gray border-2 border-z-gray-2 rounded flex flex-row justify-around items-center'>
+                <IconBar className='mt-2 w-full'>
                     <SpecialityIcon specialityId={agent.specialityId} />
-                    <div className="h-full w-10 p-1 bg-z-gray border-2 border-z-gray-2 rounded flex justify-center scale-125">
+                    <IconBarHighlight>
                         <AgentRankIcon rank={agent.rank} />
-                    </div>
+                    </IconBarHighlight>
                     <AttributeIcon attributeId={agent.attributeId} />
-                </div>
+                </IconBar>
             </DottedCard>
         </Link>
     );

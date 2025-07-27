@@ -3,6 +3,7 @@ import { AgentId } from '@/agent/data/agent.type';
 import { agents } from '@/agent/data/agents.data';
 import AttributeIcon from '@/attribute/components/attribute-icon.component';
 import DottedCard from '@/common/components/ui/dotted-card.component';
+import IconBar, { IconBarHighlight } from '@/common/components/ui/icon-bar.component';
 import FactionIcon from '@/faction/components/faction-icon.component';
 import AgentRankIcon from '@/rank/components/agent-rank-icon.component';
 import SpecialityIcon from '@/speciality/components/speciality-icon.component';
@@ -18,14 +19,14 @@ export default function Agent({ agentId }: AgentProps) {
         <div className="mx-auto max-w-4xl flex flex-col items-center mt-2 px-8">
             <DottedCard containerClass='w-full sm:w-[500px] md:w-[700px]' contentClass='flex flex-col items-center px-4'>
                 <h1 className="text-3xl font-bold mb-2">{agent.name}</h1>
-                <div className='mb-2 w-[256px] h-10 bg-z-gray border-2 border-z-gray-2 rounded flex flex-row justify-around items-center'>
-                    <div className="h-full w-10 p-1 bg-z-gray border-2 border-z-gray-2 rounded flex justify-center scale-125">
+                <IconBar className='mb-2 w-[210px]'>
+                    <IconBarHighlight>
                         <AgentRankIcon rank={agent.rank} />
-                    </div>
+                    </IconBarHighlight>
                     <SpecialityIcon specialityId={agent.specialityId} />
                     <AttributeIcon attributeId={agent.attributeId} />
                     <FactionIcon factionId={agent.factionId} />
-                </div>
+                </IconBar>
                 <AgentSplashArt agentId={agent.id} />
             </DottedCard>
         </div>

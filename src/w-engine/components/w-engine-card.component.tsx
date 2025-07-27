@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import DottedCard from '@/common/components/ui/dotted-card.component';
+import IconBar, { IconBarHighlight } from '@/common/components/ui/icon-bar.component';
 import ItemRankIcon from '@/rank/components/item-rank-icon.component';
 import SpecialityIcon from '@/speciality/components/speciality-icon.component';
 import WEngineIcon from '@/w-engine/components/w-engine-icon.component';
@@ -20,12 +21,12 @@ export default function WEngineCard({ wEngine }: WEngineCardProps) {
                 <div className='w-full aspect-square rounded relative'>
                     <WEngineIcon wEngineId={wEngine.id} />
                 </div>
-                <div className='mt-2 w-full h-10 bg-z-gray border-2 border-z-gray-2 rounded flex flex-row justify-around items-center'>
-                    <div className="h-full w-10 bg-z-gray border-2 border-z-gray-2 rounded flex justify-center scale-125">
+                <IconBar className='mt-2 w-full'>
+                    <IconBarHighlight>
                         <ItemRankIcon rank={wEngine.rank} />
-                    </div>
+                    </IconBarHighlight>
                     <SpecialityIcon specialityId={wEngine.specialityId} />
-                </div>
+                </IconBar>
             </DottedCard>
         </Link>
     );
