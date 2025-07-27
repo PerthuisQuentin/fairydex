@@ -36,6 +36,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        {/* Fallback ICO for legacy browsers */}
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+      </head>
       <body
         className={`text-gray-300 antialiased ${belanosimaFont.className}`}
       >
