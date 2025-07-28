@@ -10,7 +10,7 @@ type TextButtonProps = {
 
 export const TextButton = ({ className, children, selected, onClick }: TextButtonProps) => {
     const buttonClass = classNames(
-        'group rounded-full h-12 w-30 px-1 text-z-white text-2xl',
+        'group rounded-full px-[3px] py-[3px] text-z-white text-xl',
         'flex items-center justify-center',
         'border-2 border-z-black bg-gradient-to-br from-white/10 to-z-gray/10',
         'transition-all duration-300 ease-out',
@@ -24,14 +24,14 @@ export const TextButton = ({ className, children, selected, onClick }: TextButto
 
     const innerButtonClass = classNames(
         'relative pointer-events-none',
-        'rounded-full h-9 w-100 bg-z-grid',
+        'rounded-full h-full bg-z-grid',
         'flex items-center justify-center',
     );
 
     return (
         <button className={buttonClass} onClick={onClick} type="button">
             <span className={innerButtonClass}>
-                <span className="px-4 h-6 flex items-center justify-center">
+                <span className="px-8 py-1 flex items-center justify-center">
                     {children}
                 </span>
             </span>

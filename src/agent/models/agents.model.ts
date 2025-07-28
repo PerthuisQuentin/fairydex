@@ -1,6 +1,7 @@
 import { AgentId } from '@/agent/data/agent.type';
 import { AttributeFamilyId } from '@/attribute/data/attribute.type';
 import { attributes } from '@/attribute/data/attributes.data';
+import { FactionId } from '@/faction/data/faction.type';
 import { SpecialityId } from '@/speciality/data/speciality.type';
 
 import { Agent } from './agent.model';
@@ -8,6 +9,7 @@ import { Agent } from './agent.model';
 export type FilterCriteria = {
     attributeFamilyIds?: AttributeFamilyId[];
     specialityIds?: SpecialityId[];
+    factionIds?: FactionId[];
 }
 
 export class Agents {
@@ -36,6 +38,9 @@ export class Agents {
                 }
             }
             if (filterCriteria?.specialityIds && !filterCriteria.specialityIds.includes(agent.specialityId)) {
+                return false;
+            }
+            if (filterCriteria?.factionIds && !filterCriteria.factionIds.includes(agent.factionId)) {
                 return false;
             }
             return true;
