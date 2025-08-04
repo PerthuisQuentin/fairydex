@@ -1,3 +1,5 @@
+import { Effect } from '@/core-rpg/types/effect.type';
+
 export enum DriveDiscId {
     AstralVoice = 'astral-voice',
     BranchAndBlade = 'branch-and-blade',
@@ -24,4 +26,6 @@ export enum DriveDiscId {
 export type DriveDiscData = {
     id: DriveDiscId;
     name: string;
+    effects2Pieces: Effect[];
+    effects4Pieces: Effect[];
 }
