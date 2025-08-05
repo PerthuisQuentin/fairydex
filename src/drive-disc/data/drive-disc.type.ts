@@ -24,4 +24,6 @@ export enum DriveDiscId {
 export type DriveDiscData = {
     id: DriveDiscId;
     name: string;
+    effects2PiecesDescription: string;
+    effects4PiecesDescription: string;
 }
