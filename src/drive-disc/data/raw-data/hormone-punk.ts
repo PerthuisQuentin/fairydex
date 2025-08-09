@@ -4,8 +4,8 @@ import { DriveDisc } from '@/drive-disc/models/drive-disc.model';
 const data: DriveDiscData = {
     id: DriveDiscId.HormonePunk,
     name: 'Hormone Punk',
-    effects2PiecesDescription: 'Increases ATK by 10%',
-    effects4PiecesDescription: 'Upon entering combat or switching in, its user\'s ATK increases by 25% for 10s. This effect can trigger once every 20s.',
+    effects2PiecesDescription: '<<attack>> <<value:+10%>>',
+    effects4PiecesDescription: 'Upon entering combat or switching in, its user\'s <<attack>> increases by <<value:+25%>> for <<value:10s>>. This effect can trigger once every <<value:20s>>.',
 };
 
 const driveDisc = new DriveDisc(data);

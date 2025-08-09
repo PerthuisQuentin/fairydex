@@ -4,8 +4,8 @@ import { DriveDisc } from '@/drive-disc/models/drive-disc.model';
 const data: DriveDiscData = {
     id: DriveDiscId.PufferElectro,
     name: 'Puffer Electro',
-    effects2PiecesDescription: 'Increases PEN Ratio by 8%',
-    effects4PiecesDescription: 'Ultimate DMG increases by 20%. Launching an Ultimate increases the equipper\'s ATK by 15% for 12s.',
+    effects2PiecesDescription: '<<pen-ratio>> <<value:+8%>>',
+    effects4PiecesDescription: '<<ultimate-damage>> <<value:+20%>>.<<br>>Launching an <<ultimate>> increases the equipper\'s <<attack>> by <<value:15%>> for <<value:12s>>.',
 };
 
 const driveDisc = new DriveDisc(data);
