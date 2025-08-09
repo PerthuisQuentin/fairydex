@@ -16,7 +16,8 @@
     "start": "next start",
     "lint": "next lint && npm run type-check",
     "lint:fix": "next lint --fix && npm run type-check",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "prepare": "husky"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -36,6 +37,8 @@
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
     "eslint-plugin-simple-import-sort": "^12.1.1",
+    "gitmoji-cli": "^9.7.0",
+    "husky": "^9.1.7",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
