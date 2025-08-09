@@ -1,11 +1,10 @@
+import classNames from 'classnames';
+import { Roboto } from 'next/font/google';
 import React from 'react';
 
+import BadgeText, { BadgeColor } from '@/common/components/ui/badge-text.component';
 import { CombatAction } from '@/rpg-core/types/combat-action';
 import { CombatStat } from '@/rpg-core/types/combat-stat';
-
-import BadgeText, { BadgeColor } from '@/common/components/ui/badge-text.component';
-import { Roboto } from 'next/font/google';
-import classNames from 'classnames';
 
 const roboto = Roboto({
     subsets: ['latin'],
@@ -67,7 +66,7 @@ const TAG_TO_ENRICHED_PART_TYPE: Record<string, EnrichedPartType> = {
     // Others
     value: EnrichedPartType.ColoredText,
     br: EnrichedPartType.Br,
-}
+};
 
 const TAG_TO_BADGE_COLOR: Record<string, BadgeColor> = {
     // Combat Stats - Base Stats
@@ -99,7 +98,7 @@ const TAG_TO_BADGE_COLOR: Record<string, BadgeColor> = {
     [CombatStat.AssistAttackDamage]: BadgeColor.Gray,
     [CombatStat.UltimateDamage]: BadgeColor.Gray,
     [CombatStat.SheerDamage]: BadgeColor.Gray,
-}
+};
 
 const TAG_TO_CLASS_NAME: Record<string, string> = {
     [CombatAction.BasicAttack]: 'font-extrabold',
@@ -118,7 +117,7 @@ const TAG_TO_CLASS_NAME: Record<string, string> = {
     [CombatAction.Burning]: 'text-orange-500',
     [CombatAction.Shocked]: 'text-sky-500',
     value: 'text-green-500',
-}
+};
 
 const TAG_TO_TEXT: Record<string, string> = {
     // Combat Stats - Base Stats
@@ -168,7 +167,7 @@ const TAG_TO_TEXT: Record<string, string> = {
     [CombatAction.Shocked]: 'Shocked',
     value: '',
     br: '',
-}
+};
 
 const renderEnrichedText = (part: EnrichedPart): React.ReactNode => {
     const { tag, value } = part;
@@ -180,18 +179,18 @@ const renderEnrichedText = (part: EnrichedPart): React.ReactNode => {
 
     if (partType === EnrichedPartType.ColoredText) {
         const text = tag === 'value' ? value : TAG_TO_TEXT[tag] ?? value;
-        return <span className={TAG_TO_CLASS_NAME[tag]}>{text}</span>
+        return <span className={TAG_TO_CLASS_NAME[tag]}>{text}</span>;
     };
 
     return <span>{value}</span>;
-}
+};
 
 const renderSimpleText = (part: EnrichedPart): string => {
     const { tag, value } = part;
     const partType = TAG_TO_ENRICHED_PART_TYPE[tag];
 
     return (partType === EnrichedPartType.Badge ? TAG_TO_TEXT[tag] : value) ?? '';
-}
+};
 
 const TAG_REGEX = /<<([a-zA-Z0-9_-]+)(?::([^>]+))?>>/g;
 
@@ -204,19 +203,16 @@ const parseEnrichedText = (text: string): EnrichedPart[] => {
     const parts: EnrichedPart[] = [];
     let lastIndex = 0;
     let match: RegExpExecArray | null;
-    let partIndex = 0;
 
     while ((match = TAG_REGEX.exec(text)) !== null) {
         const [fullMatch, tag, value] = match;
 
         if (match.index > lastIndex) {
             parts.push({ tag: '', value: text.slice(lastIndex, match.index) });
-            partIndex++;
         }
 
         parts.push({ tag, value });
 
-        partIndex++;
         lastIndex = match.index + fullMatch.length;
     }
 
@@ -225,7 +221,7 @@ const parseEnrichedText = (text: string): EnrichedPart[] => {
     }
 
     return parts;
-}
+};
 
 export const enrichedTextToReactNode = (text: string): React.ReactNode[] => {
     const enrichedPartsByParagraph: EnrichedPart[][] = [[]];
@@ -252,11 +248,11 @@ export const enrichedTextToReactNode = (text: string): React.ReactNode[] => {
                 className={classNames('py-1 text-sm font-medium leading-6', roboto.className)}
             >
                 {enrichedText}
-            </p>
+            </p>;
         });
-}
+};
 
 export const enrichedTextToString = (text: string): string => {
     const enrichedParts = parseEnrichedText(text);
     return enrichedParts.map(renderSimpleText).join('');
-}
+};

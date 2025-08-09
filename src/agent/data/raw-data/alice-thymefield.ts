@@ -1,9 +1,9 @@
-import { Agent } from '@/agent/models/agent.model';
 import { AgentId } from '@/agent/data/agent.type';
-import { Rank } from '@/rank/data/rank.type';
+import { Agent } from '@/agent/models/agent.model';
 import { AttributeId } from '@/attribute/data/attribute.type';
-import { SpecialityId } from '@/speciality/data/speciality.type';
 import { FactionId } from '@/faction/data/faction.type';
+import { Rank } from '@/rank/data/rank.type';
+import { SpecialityId } from '@/speciality/data/speciality.type';
 import { VersionId } from '@/version/data/version.type';
 import { WEngineId } from '@/w-engine/data/w-engine.type';
 
