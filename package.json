@@ -17,7 +17,7 @@
     "lint": "next lint && npm run type-check",
     "lint:fix": "next lint --fix && npm run type-check",
     "type-check": "tsc --noEmit",
-    "prepare": "husky"
+    "prepare": "husky && gitmoji -i"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
