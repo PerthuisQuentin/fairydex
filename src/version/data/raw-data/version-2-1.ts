@@ -49,6 +49,50 @@ const data: VersionData = {
                     ]
                 }
             ]
+        },
+        {
+            channels: [
+                {
+                    name: 'Sworn to Noble Courage',
+                    agents: [
+                        {
+                            agentId: AgentId.AliceThymefield,
+                            isMain: true,
+                            isNew: true,
+                        },
+                        {
+                            agentId: AgentId.Soukaku,
+                            isMain: false,
+                            isNew: false,
+                        },
+                        {
+                            agentId: AgentId.SethLowell,
+                            isMain: false,
+                            isNew: false,
+                        }
+                    ]
+                },
+                {
+                    name: 'Moonlit Serenity',
+                    agents: [
+                        {
+                            agentId: AgentId.TsukishiroYanagi,
+                            isMain: true,
+                            isNew: false,
+                        },
+                        {
+                            agentId: AgentId.Soukaku,
+                            isMain: false,
+                            isNew: false,
+                        },
+                        {
+                            agentId: AgentId.SethLowell,
+                            isMain: false,
+                            isNew: false,
+                        }
+                    ]
+                }
+            ]
         }
     ]
 };

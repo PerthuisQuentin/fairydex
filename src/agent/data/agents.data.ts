@@ -3,6 +3,7 @@ import { Agent } from '@/agent/models/agent.model';
 import { Agents } from '@/agent/models/agents.model';
 
 import AlexandrinaSebastiane from './raw-data/alexandrina-sebastiane';
+import AliceThymefield from './raw-data/alice-thymefield';
 import AnbyDemara from './raw-data/anby-demara';
 import AntonIvanov from './raw-data/anton-ivanov';
 import AsabaHarumasa from './raw-data/asaba-harumasa';
@@ -42,6 +43,7 @@ import ZhuYuan from './raw-data/zhu-yuan';
 
 const agentList: Agent[] = [
     AlexandrinaSebastiane,
+    AliceThymefield,
     AnbyDemara,
     AntonIvanov,
     AsabaHarumasa,

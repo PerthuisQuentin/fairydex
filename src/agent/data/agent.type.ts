@@ -7,6 +7,7 @@ import { WEngineId } from '@/w-engine/data/w-engine.type';
 
 export enum AgentId {
     AlexandrinaSebastiane = 'alexandrina-sebastiane',
+    AliceThymefield = 'alice-thymefield',
     AnbyDemara = 'anby-demara',
     AntonIvanov = 'anton-ivanov',
     AsabaHarumasa = 'asaba-harumasa',

@@ -37,6 +37,7 @@ import Metanukimorphosis from './raw-data/metanukimorphosis';
 import MyriadEclipse from './raw-data/myriad-eclipse';
 import OriginalTransmorpher from './raw-data/original-transmorpher';
 import PeacekeeperSpecialized from './raw-data/peacekeeper-specialized';
+import PracticedPerfection from './raw-data/practiced-perfection';
 import PreciousFossilizedCore from './raw-data/precious-fossilized-core';
 import PuzzleSphere from './raw-data/puzzle-sphere';
 import QingmingBirdcage from './raw-data/qingming-birdcage';
@@ -106,10 +107,11 @@ const wEngineList: WEngine[] = [
     MagneticStormBravo,
     MagneticStormCharlie,
     MarcatoDesire,
-    MyriadEclipse,
     Metanukimorphosis,
+    MyriadEclipse,
     OriginalTransmorpher,
     PeacekeeperSpecialized,
+    PracticedPerfection,
     PreciousFossilizedCore,
     PuzzleSphere,
     QingmingBirdcage,

@@ -39,6 +39,7 @@ export enum WEngineId {
     MyriadEclipse = 'myriad-eclipse',
     OriginalTransmorpher = 'original-transmorpher',
     PeacekeeperSpecialized = 'peacekeeper-specialized',
+    PracticedPerfection = 'practiced-perfection',
     PreciousFossilizedCore = 'precious-fossilized-core',
     PuzzleSphere = 'puzzle-sphere',
     QingmingBirdcage = 'qingming-birdcage',
