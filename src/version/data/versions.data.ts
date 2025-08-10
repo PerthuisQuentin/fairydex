@@ -1,4 +1,5 @@
 import { Version } from '@/version/models/version.model';
+import { Versions } from '@/version/models/versions.model';
 
 import Version_1_0 from './raw-data/version-1-0';
 import Version_1_1 from './raw-data/version-1-1';
@@ -11,7 +12,7 @@ import Version_1_7 from './raw-data/version-1-7';
 import Version_2_0 from './raw-data/version-2-0';
 import Version_2_1 from './raw-data/version-2-1';
 
-export const versions: Version[] = [
+export const versionList: Version[] = [
     Version_1_0,
     Version_1_1,
     Version_1_2,
@@ -23,3 +24,5 @@ export const versions: Version[] = [
     Version_2_0,
     Version_2_1,
 ];
+
+export const versions = new Versions(versionList);

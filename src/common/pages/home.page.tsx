@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 import AgentIcon from '@/agent/components/agent-icon.component';
@@ -40,6 +41,7 @@ export default function Home() {
                 <HomeCard icon={<WEngineIcon wEngineId={WEngineId.DemaraBatteryMarkII} />} label="W-Engines" href="/w-engines" />
                 <HomeCard icon={<DriveDiscIcon driveDiscId={DriveDiscId.WoodpeckerElectro} />} label="Drive Discs" href="/drive-discs" />
                 <HomeCard icon={<BangbooIcon bangbooId={BangbooId.Amillion} />} label="Bangboos" href="/bangboos" />
+                <HomeCard icon={<Image src='zzz-logo.webp' width={368} height={400} alt='zzz logo' unoptimized={true} />} label="Versions" href="/versions" />
             </div>
         </main>
     );

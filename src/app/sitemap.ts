@@ -25,8 +25,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
             '/bangboos',
             '/drive-discs',
             '/w-engines',
+            '/versions',
             '/about'
-        ], 0.5),
+        ], 0.8),
         // Agents
         ...generatePages(
             Object.values(AgentId).map((id) => `/agents/${id}`),
@@ -35,17 +36,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         // Bangboos
         ...generatePages(
             Object.values(BangbooId).map((id) => `/bangboos/${id}`),
-            0.7,
+            0.8,
         ),
         // W Engines
         ...generatePages(
             Object.values(BangbooId).map((id) => `/w-engines/${id}`),
-            0.7,
+            0.8,
         ),
         // Drive Discs
         ...generatePages(
             Object.values(BangbooId).map((id) => `/drive-discs/${id}`),
-            0.7,
+            0.8,
         ),
     ];
 }
