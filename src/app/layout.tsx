@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     apple: '/web-app-manifest-192x192.png',
   },
   manifest: '/manifest.webmanifest',
+  alternates: {
+    canonical: './',
+  }
 };
 
 export default function RootLayout({
