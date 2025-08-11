@@ -15,5 +15,5 @@ fi
 sed -i '' "s/\"version\": \".*\"/\"version\": \"$VERSION\"/" package.json
 git add package.json
 git commit -m ":bookmark: $VERSION"
-git tag v$VERSION
-
+git tag -a $VERSION
+git push origin tag $VERSION

@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fairydex
+
+Fairydex is a fan-made web app for Zenless Zone Zero, designed to help players explore, filter, and compare all agents, Bangboos, W-Engines, and more. The project is built with Next.js (App Router) and organized by business domain for clarity and scalability.
+
+## Features
+
+- Browse and search all agents, Bangboos, W-Engines, Drive Discs, and more
+- Detailed stats, filters, and comparison tools
+- Modern, responsive UI with Tailwind CSS
+- Data and components organized by domain for easy maintenance
 
 ## Getting Started
 
-First, run the development server:
+### Install dependencies
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```sh
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Start the development server
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Build for production
 
-## Learn More
+```sh
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Lint and type-check
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```sh
+npm run lint      # Lint + type-check
+npm run lint:fix  # Lint + fix + type-check
+npm run type-check
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Release (bump version, commit, tag)
 
-## Deploy on Vercel
+```sh
+npm run release
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## App Link
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[Open the Fairydex app](https://fairydex.com)
+
+---
+
+> This project is not affiliated with COGNOSPHERE/HoYoverse. Zenless Zone Zero and all related assets are © COGNOSPHERE/HoYoverse.

@@ -50,6 +50,12 @@ src/
 - Use enums for IDs (e.g., `AgentId`) to ensure type safety and avoid typos.
 - Avoid duplicating navigation/page logic; keep route files minimal and delegate to page components.
 - For shared logic, use `src/common/`.
+- **Always avoid code duplication:**
+  - If you notice repeated code, refactor it into a shared function or utility.
+  - Think about creating reusable functions or components to keep the codebase DRY (Don't Repeat Yourself).
+- **Comments:**
+  - Only add comments when they clarify intent or provide necessary context.
+  - Never add comments that simply repeat what the code does.
 
 ## Documentation
 
