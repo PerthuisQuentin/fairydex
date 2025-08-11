@@ -28,7 +28,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
             '/drive-discs',
             '/w-engines',
             '/versions',
-            '/about'
+            '/about',
+            '/changelog',
         ], 0.8),
         // Agents
         ...generatePages(

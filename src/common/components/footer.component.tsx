@@ -6,6 +6,9 @@ export default function Footer() {
                 <Link href="/about" className="text-zinc-400 hover:text-zinc-200 transition">
                     About
                 </Link>
+                <Link href="/changelog" className="text-zinc-400 hover:text-zinc-200 transition">
+                    Changelog
+                </Link>
                 <span className="text-zinc-500">
                     © {new Date().getFullYear()} Fairydex. Fan-made project. Zenless Zone Zero is © COGNOSPHERE / HoYoverse.
                 </span>
