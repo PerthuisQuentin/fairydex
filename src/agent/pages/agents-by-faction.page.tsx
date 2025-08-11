@@ -1,11 +1,10 @@
+import AgentCard from '@/agent/components/agent-card.component';
 import { agents } from '@/agent/data/agents.data';
 import FactionArt from '@/faction/components/faction-art.component';
 import { FactionId } from '@/faction/data/faction.type';
 import { factions } from '@/faction/data/factions.data';
 
-import AgentCard from './agent-card.component';
-
-export default function AgentsByFaction() {
+export default function AgentsByFactionPage() {
     const renderFaction = (factionId: FactionId) => {
         return (
             <div key={factionId} className='bg-z-gray-2 rounded p-1'>
@@ -24,7 +23,7 @@ export default function AgentsByFaction() {
     };
 
     return (
-        <div className="w-full flex flex-col justify-center gap-8">
+        <div className="w-full px-4 lg:max-w-4xl xl:max-w-6xl flex flex-col justify-center gap-8">
             {factions.getAll().map((faction) => renderFaction(faction.id))}
         </div>
     );

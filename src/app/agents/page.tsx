@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import Agents from '@/agent/pages/agents.page';
+import AgentsPage from '@/agent/pages/agents.page';
 
 const title = 'FairyDex - Agent list';
 const description = 'Browse all agents in Zenless Zone Zero';
@@ -14,4 +14,4 @@ export const metadata: Metadata = {
     }
 };
 
-export default Agents;
+export default AgentsPage;

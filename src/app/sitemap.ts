@@ -22,6 +22,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         // Lists
         ...generatePages([
             '/agents',
+            '/agents/by-role',
+            '/agents/by-faction',
             '/bangboos',
             '/drive-discs',
             '/w-engines',
