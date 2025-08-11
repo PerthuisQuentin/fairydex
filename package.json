@@ -17,6 +17,7 @@
     "lint": "next lint && npm run type-check",
     "lint:fix": "next lint --fix && npm run type-check",
     "type-check": "tsc --noEmit",
+    "release": "bash ./scripts/bump-version.sh",
     "prepare": "husky && gitmoji -i"
   },
   "dependencies": {
