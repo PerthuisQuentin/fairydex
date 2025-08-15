@@ -1,6 +1,19 @@
-export default function About() {
+import prisma from '@/lib/prisma';
+
+export default async function About() {
+    const users = await prisma.user.findMany({
+        select: {
+            id: true,
+            name: true,
+            email: true,
+            createdAt: true,
+        },
+    });
+    console.log('Fetched users:', users);
+
     return (
         <div className="w-full max-w-2xl mx-auto py-8 px-4 flex flex-col items-center">
+            {JSON.stringify(users, null, 2)}
             <h1 className="text-3xl font-bold mb-4">About</h1>
             <p className="text-base text-zinc-300 mb-4 text-center">
                 This website is an unofficial fan-made project inspired by the universe of Zenless Zone Zero, created by HoYoverse.<br />
